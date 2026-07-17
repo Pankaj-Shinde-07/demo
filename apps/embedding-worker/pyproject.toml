@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "embedding-worker"
+version = "0.1.0"
+description = "Canaris embedding worker — text to vectors (BAAI/bge-large-en-v1.5)"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.32",
+    "pydantic>=2.9",
+    # W3: local embeddings (D3). torch is installed CPU-only in the Dockerfile
+    # BEFORE this so sentence-transformers picks up the CPU build (no CUDA).
+    "sentence-transformers>=3.0,<4",
+    "psycopg2-binary>=2.9",
+    "numpy>=1.26",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.setuptools]
+packages = ["src"]

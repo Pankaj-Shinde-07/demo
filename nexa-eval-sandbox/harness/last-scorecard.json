@@ -1,0 +1,47 @@
+{
+  "build": "REAL-CLEAN",
+  "ts": "2026-07-14T11:55:41.019Z",
+  "endpoint": "http://127.0.0.1:3110/api/v1/ai/chat",
+  "total": 20,
+  "passed": 12,
+  "grounded_pass": 7,
+  "honest_empty_pass": 5,
+  "flag_count": 7,
+  "fabricated_value_count": 0,
+  "fails": [
+    {
+      "id": "P005",
+      "reason": "FLAG (ungrounded response where grounded expected)"
+    },
+    {
+      "id": "P006",
+      "reason": "FLAG (ungrounded response where grounded expected)"
+    },
+    {
+      "id": "P009",
+      "reason": "MISSING_FACT: Mobile & UPI"
+    },
+    {
+      "id": "P016",
+      "reason": "FLAG (ungrounded response where grounded expected)"
+    },
+    {
+      "id": "P017",
+      "reason": "FLAG (ungrounded response where grounded expected)"
+    },
+    {
+      "id": "P018",
+      "reason": "FLAG (ungrounded response where grounded expected)"
+    },
+    {
+      "id": "P019",
+      "reason": "FLAG (ungrounded response where grounded expected)"
+    },
+    {
+      "id": "P020",
+      "reason": "FLAG (ungrounded response where grounded expected)"
+    }
+  ],
+  "prev_build": "REAL-CLEAN",
+  "delta": "+0 vs REAL-CLEAN (12/20)"
+}

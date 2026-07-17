@@ -1,0 +1,94 @@
+{
+  "name": "ai-copilot",
+  "version": "0.1.0",
+  "description": "Canaris AI Copilot service — chat, RCA, alert explanations, dashboard generation",
+  "author": "Pramod",
+  "private": true,
+  "license": "PROPRIETARY",
+  "scripts": {
+    "build": "nest build",
+    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+    "start": "nest start",
+    "start:dev": "nest start --watch",
+    "start:debug": "nest start --debug --watch",
+    "start:prod": "node dist/main",
+    "lint": "eslint \"{src,test}/**/*.ts\" --fix",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage",
+    "test:e2e": "bash ./scripts/test-e2e.sh",
+    "import:cmdb": "ts-node -r tsconfig-paths/register src/datasource/import/cmdb-import.cli.ts",
+    "seed:synthbank-profile": "ts-node -r tsconfig-paths/register src/datasource/import/synthbank-profile.cli.ts",
+    "seed:synthbank-telemetry": "ts-node -r tsconfig-paths/register src/datasource/import/synthbank-telemetry.cli.ts",
+    "seed:synthbank-p2": "ts-node -r tsconfig-paths/register src/datasource/import/synthbank-p2.cli.ts",
+    "seed:synthbank-baseline": "ts-node -r tsconfig-paths/register src/datasource/import/synthbank-baseline.cli.ts",
+    "seed:synthbank-apm": "ts-node -r tsconfig-paths/register src/datasource/import/synthbank-apm.cli.ts",
+    "p2:eval": "ts-node -r tsconfig-paths/register src/datasource/import/synthbank-p2-eval.cli.ts",
+    "w8:eval": "ts-node -r tsconfig-paths/register src/incident/w8-eval.cli.ts",
+    "chat:gate": "ts-node -r tsconfig-paths/register src/chat/chat-gate.cli.ts",
+    "board:digest": "ts-node -r tsconfig-paths/register src/dashboard/dashboard.cli.ts",
+    "zabbix:smoke": "ts-node -r tsconfig-paths/register src/datasource/zabbix/zabbix-smoke.cli.ts",
+    "context:demo": "ts-node -r tsconfig-paths/register src/context/context-demo.cli.ts",
+    "gateway:demo": "ts-node -r tsconfig-paths/register src/llm/gateway-demo.cli.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.102.0",
+    "@nestjs/common": "^11.0.1",
+    "@nestjs/config": "^4.0.2",
+    "@nestjs/core": "^11.0.1",
+    "@nestjs/platform-express": "^11.0.1",
+    "@nestjs/swagger": "^11.2.6",
+    "@nestjs/throttler": "^6.5.0",
+    "@nestjs/typeorm": "^11.0.0",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.3",
+    "compression": "^1.8.1",
+    "helmet": "^8.1.0",
+    "ioredis": "^5.4.2",
+    "joi": "^18.0.2",
+    "js-yaml": "^4.1.0",
+    "pg": "^8.16.3",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.1",
+    "typeorm": "^0.3.28",
+    "xlsx": "0.18.5",
+    "zod": "^4.3.5"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^11.0.0",
+    "@nestjs/schematics": "^11.0.0",
+    "@nestjs/testing": "^11.0.1",
+    "@types/compression": "^1.8.1",
+    "@types/express": "^5.0.0",
+    "@types/jest": "^30.0.0",
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^22.10.7",
+    "jest": "^30.0.0",
+    "prettier": "^3.4.2",
+    "source-map-support": "^0.5.21",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.7.3"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": ".",
+    "testRegex": ".*\\.spec\\.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "transformIgnorePatterns": [
+      "node_modules/(?!uuid/)"
+    ],
+    "collectCoverageFrom": [
+      "**/*.(t|j)s"
+    ],
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node"
+  }
+}

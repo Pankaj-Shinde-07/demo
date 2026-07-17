@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Build outputs
+dist/
+build/
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+docker-compose.override.yml
+
+# knowledge-ingestion staged uploads (W2/CP2.3 — durable staging for reindex)
+.ki-uploads/
+
+# embedding-worker model cache (W3 — host-mounted bge-large, gitignored)
+.hf-cache/

@@ -1,0 +1,73 @@
+{
+  "services": {
+    "SVC-CBS": {
+      "name": "Core Banking",
+      "health": "healthy",
+      "ci_count": 16,
+      "worst_cpu_ci": "CBS-WEB-08",
+      "worst_cpu_val": 53.8
+    },
+    "SVC-IB": {
+      "name": "Internet Banking",
+      "health": "degraded",
+      "ci_count": 14,
+      "worst_cpu_ci": "IB-APP-01",
+      "worst_cpu_val": 94.0
+    },
+    "SVC-MOB": {
+      "name": "Mobile & UPI",
+      "health": "healthy",
+      "ci_count": 13,
+      "worst_cpu_ci": "MOB-APP-03",
+      "worst_cpu_val": 53.9
+    },
+    "SVC-ATM": {
+      "name": "ATM Switch",
+      "health": "degraded",
+      "ci_count": 12,
+      "worst_cpu_ci": "ATM-NET-10",
+      "worst_cpu_val": 52.7
+    },
+    "SVC-PAY": {
+      "name": "Payments (NEFT/RTGS/IMPS)",
+      "health": "healthy",
+      "ci_count": 14,
+      "worst_cpu_ci": "PAY-APP-04",
+      "worst_cpu_val": 53.9
+    },
+    "SVC-CARD": {
+      "name": "Card Management",
+      "health": "healthy",
+      "ci_count": 12,
+      "worst_cpu_ci": "CARD-NET-12",
+      "worst_cpu_val": 52.6
+    },
+    "SVC-MAIL": {
+      "name": "Email & Collaboration",
+      "health": "healthy",
+      "ci_count": 11,
+      "worst_cpu_ci": "MAIL-NET-11",
+      "worst_cpu_val": 54.3
+    },
+    "SVC-CRM": {
+      "name": "CRM",
+      "health": "healthy",
+      "ci_count": 10,
+      "worst_cpu_ci": "CRM-HOS-08",
+      "worst_cpu_val": 51.4
+    },
+    "SVC-TRE": {
+      "name": "Treasury",
+      "health": "healthy",
+      "ci_count": 9,
+      "worst_cpu_ci": "TRE-DB-05",
+      "worst_cpu_val": 51.9
+    }
+  },
+  "pins": {
+    "ib_degraded_ci": "IB-APP-01",
+    "atm_offline_ci": "ATM-NET-12",
+    "treasury_service": "SVC-TRE",
+    "crm_host_no_disk": "CRM-HOS-08"
+  }
+}

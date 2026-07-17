@@ -1,0 +1,85 @@
+[
+  {
+    "id": "SVC-CBS",
+    "name": "Core Banking",
+    "aliases": [
+      "cbs",
+      "core banking",
+      "core"
+    ]
+  },
+  {
+    "id": "SVC-IB",
+    "name": "Internet Banking",
+    "aliases": [
+      "internet banking",
+      "net banking",
+      "online banking",
+      "ib"
+    ]
+  },
+  {
+    "id": "SVC-MOB",
+    "name": "Mobile & UPI",
+    "aliases": [
+      "mobile banking",
+      "mobile app",
+      "upi",
+      "mobile"
+    ]
+  },
+  {
+    "id": "SVC-ATM",
+    "name": "ATM Switch",
+    "aliases": [
+      "atm",
+      "atm switch",
+      "atm network"
+    ]
+  },
+  {
+    "id": "SVC-PAY",
+    "name": "Payments (NEFT/RTGS/IMPS)",
+    "aliases": [
+      "payments",
+      "neft",
+      "rtgs",
+      "imps",
+      "payment gateway"
+    ]
+  },
+  {
+    "id": "SVC-CARD",
+    "name": "Card Management",
+    "aliases": [
+      "cards",
+      "card management",
+      "card system"
+    ]
+  },
+  {
+    "id": "SVC-MAIL",
+    "name": "Email & Collaboration",
+    "aliases": [
+      "email",
+      "mail",
+      "collaboration"
+    ]
+  },
+  {
+    "id": "SVC-CRM",
+    "name": "CRM",
+    "aliases": [
+      "crm",
+      "customer relationship"
+    ]
+  },
+  {
+    "id": "SVC-TRE",
+    "name": "Treasury",
+    "aliases": [
+      "treasury",
+      "tr"
+    ]
+  }
+]

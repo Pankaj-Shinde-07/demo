@@ -1,0 +1,3 @@
+# Severity rules — how to map raw alert signals to business-impact severity
+# tiers for this industry. Empty for the default pack.
+rules: []

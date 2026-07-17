@@ -1,0 +1,35 @@
+{
+  "scenario": "scenario-4",
+  "name": "Cyber posture (failed-login + IPS)",
+  "synthetic": true,
+  "label": "SynthBank synthetic data",
+  "window": { "dayOffset": 4, "hours": 6 },
+  "correlation": {
+    "rawAlertCount": 3,
+    "incidents": 1,
+    "rootCiExternalId": null,
+    "note": "failed-login spike + IPS signature correlate to one security incident on the internet-banking edge"
+  },
+  "rootCause": {
+    "type": "security_pattern",
+    "ciExternalId": "CI-0025",
+    "changeRef": null,
+    "note": "credential-stuffing pattern; attribution requires the security feed"
+  },
+  "impact": {
+    "rootCiExternalId": null,
+    "expectedServices": ["internet_mobile_banking"],
+    "expectedCustomers": null,
+    "expectedBranches": null,
+    "derivation": "no infra blast-radius traversal — security incident, not a CI outage"
+  },
+  "recommendedAction": {
+    "mode": "propose",
+    "autoExecute": false,
+    "text": "Escalate to SOC; consider rate-limit / WAF rule on the IB edge — human attests/executes (RBI cyber framing)."
+  },
+  "honestGaps": [
+    "W8 reasoning for this scenario is GATED on the deferred security feed — data + golden are authored, attribution/correlation is not demonstrable until the feed lands"
+  ],
+  "securityFeedGated": true
+}

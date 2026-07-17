@@ -1,0 +1,32 @@
+# W6 Phase 2 (CP6.5) — default (vertical-neutral) value-model (ADR-005). Same
+# slot names as every pack; only the figures differ, keeping the engine portable
+# (ADR-003). A deployment with no industry pack lands here and still degrades
+# honestly — the placeholders carry [verify] tags, not asserted facts.
+
+value_at_risk:
+  # Class-2 (derived): measured revenue_impact_hourly × an estimated outage
+  # duration. Generic 1-hour placeholder; the duration is the assumption.
+  estimated_outage_hours:
+    value: 1.0
+    verify: "[verify] replace with this deployment's measured MTTR"
+  basis: "Class-2 derived: service.revenue_impact_hourly (measured) × estimated_outage_hours (assumed)"
+
+retention:
+  # Class-3 (assumption-only): generic churn placeholder, never asserted.
+  monthly_churn_rate_pct:
+    value: 0.0
+    verify: "[verify] no measured basis; label Class-3 or withhold"
+  note: "assumption-only; presented labelled as Class-3 or withheld; never grounded as measured"
+
+# W9 (CP9.3) — generic ROI coefficients (vertical-neutral). [verify] placeholders.
+roi:
+  triage_share_pct:
+    value: 50
+    verify: "[verify] measure the triage share of incident effort on site"
+  mttr_reduction_pct:
+    value: 30
+    verify: "[verify] measure realised MTTR reduction post-deployment"
+  monthly_penalty_estimate_inr:
+    value: 0
+    verify: "[verify] no measured basis; assumption-only, label Class-3"
+  note: "Class-2 where applied to measured inputs; penalties Class-3 assumption-only"

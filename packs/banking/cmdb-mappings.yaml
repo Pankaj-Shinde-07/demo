@@ -1,0 +1,50 @@
+# CMDB mappings — co-op bank / UCB first-cut (ADR-003).
+# Verify regulatory specifics against current RBI circulars before ship; the
+# structure here is what matters now, exact figures slot in at pack-detail time.
+
+tier_1_services:        # customer-facing, transactional, regulator-visible
+  - core_banking         # CBS — accounts, GL, transaction processing
+  - upi_imps             # retail digital payments (usually via sponsor/NPCI)
+  - neft_rtgs            # interbank transfers (usually sub-membership)
+  - atm_card_services    # ATM switching + card authorization
+  - internet_mobile_banking
+  - cheque_clearing      # CTS
+
+tier_2_services:        # supporting
+  - branch_wan           # MPLS/VPN connectivity to branches
+  - regulatory_reporting # RBI returns / ADF
+  - email_messaging
+  - aml_cft_monitoring
+
+tier_3_services:        # back-office / internal
+  - hrms
+  - document_management
+  - intranet
+
+typical_ci_types:
+  - cbs_application_server
+  - cbs_database_server
+  - cbs_hosted_service        # for shared/hosted CBS — links not boxes
+  - upi_switch
+  - payment_gateway
+  - atm_switch
+  - hsm_device                # PIN/key management for cards + UPI
+  - sponsor_bank_link         # CO-OP-SPECIFIC: the rail to the sponsor bank
+  - npci_link                 # CO-OP-SPECIFIC
+  - core_router
+  - branch_router
+  - core_switch
+  - firewall
+  - dr_site_node              # RBI BCP/DR requirement
+  - backup_system
+
+critical_dependencies:
+  - if any tier_1 service has an unknown or unmonitored sponsor_bank_link, flag for CMDB hygiene review
+  - any tier_1 service with no mapped DR node violates expected BCP posture — flag
+
+regulatory_context:           # VERIFY against current RBI circulars before ship
+  regulator: RBI
+  framework: "RBI cyber security framework for UCBs (graded, Levels I-IV by digital depth)"
+  supervision: "Supervisory Action Framework (SAF) for UCBs"
+  incident_reporting: "cyber incidents reportable to RBI within stipulated window (confirm current hours)"
+  bcp: "DR/BCP with defined RPO/RTO for tier_1 services (confirm current expectation)"

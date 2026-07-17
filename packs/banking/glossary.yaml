@@ -1,0 +1,11 @@
+# Glossary — co-op-bank domain terms the AI Copilot uses to ground responses.
+# First-cut; grown in later workstreams.
+terms:
+  - term: "sponsor_bank_link"
+    definition: "Connectivity to the sponsor commercial bank through which a UCB's UPI/IMPS/NEFT/RTGS settlement flows (sub-membership). A first-class CI; its outage cascades to retail payments."
+  - term: "npci_link"
+    definition: "Connectivity to national payment infrastructure for retail rails. Co-op-specific first-class CI."
+  - term: "CBS"
+    definition: "Core Banking System — accounts, general ledger, and transaction processing. May be on-prem or a hosted/shared service."
+  - term: "tier_1 service"
+    definition: "Customer-facing, transactional, regulator-visible service (e.g. core_banking, upi_imps, neft_rtgs, atm_card_services)."

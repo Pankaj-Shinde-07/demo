@@ -1,0 +1,108 @@
+schemaVersion: 1
+key: soc-cyber-security-operations
+title: Cyber Security Operations Dashboard
+persona: soc
+layout:
+  grid:
+    cols: 12
+  items:
+    - widgetId: mitre
+      x: 0
+      'y': 0
+      w: 4
+      h: 4
+    - widgetId: threat-heat
+      x: 4
+      'y': 0
+      w: 4
+      h: 4
+    - widgetId: attack-tl
+      x: 8
+      'y': 0
+      w: 4
+      h: 4
+    - widgetId: risk-mx
+      x: 0
+      'y': 4
+      w: 4
+      h: 4
+    - widgetId: endpoint
+      x: 4
+      'y': 4
+      w: 4
+      h: 4
+widgets:
+  - id: mitre
+    title: MITRE ATT&CK coverage
+    query:
+      source: provider
+      dataClass: security_events
+      scope:
+        level: tenant
+      aggregation: latest
+      window: 24h
+      filters: []
+    requiredDataClasses:
+      - security_events
+      - threat_intel
+    type: mitre_attack_matrix
+  - id: threat-heat
+    title: Threat heat map
+    query:
+      source: provider
+      dataClass: security_events
+      scope:
+        level: tenant
+      aggregation: latest
+      window: 24h
+      filters: []
+    requiredDataClasses:
+      - security_events
+    type: heat_map
+    xDimension: tactic
+    yDimension: asset
+  - id: attack-tl
+    title: Attack timeline
+    query:
+      source: provider
+      dataClass: security_events
+      scope:
+        level: tenant
+      aggregation: latest
+      window: 24h
+      filters: []
+    requiredDataClasses:
+      - security_events
+    type: event_timeline
+    eventSource: security_events
+    window: 7d
+  - id: risk-mx
+    title: Risk matrix
+    query:
+      source: provider
+      dataClass: vulnerabilities
+      scope:
+        level: tenant
+      aggregation: latest
+      window: 24h
+      filters: []
+    requiredDataClasses:
+      - vulnerabilities
+    type: risk_matrix
+    impactLevels: 5
+    likelihoodLevels: 5
+  - id: endpoint
+    title: Endpoint health
+    query:
+      source: provider
+      dataClass: security_events
+      scope:
+        level: tenant
+      aggregation: latest
+      window: 24h
+      filters: []
+    requiredDataClasses:
+      - security_events
+    type: kpi_tile
+    format: number
+generatedBy: template

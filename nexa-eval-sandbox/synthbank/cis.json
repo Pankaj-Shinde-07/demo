@@ -1,0 +1,1576 @@
+[
+  {
+    "id": "CBS-APP-01",
+    "service_id": "SVC-CBS",
+    "kind": "app",
+    "hostname": "cbs-app-01.synthbank.local",
+    "metrics": {
+      "cpu_pct": 48.0,
+      "mem_pct": 40.8,
+      "disk_pct": 16.4,
+      "uptime_s": 13354280,
+      "response_ms": 115.8,
+      "availability_pct": 99.42,
+      "status": "up"
+    }
+  },
+  {
+    "id": "CBS-APP-02",
+    "service_id": "SVC-CBS",
+    "kind": "app",
+    "hostname": "cbs-app-02.synthbank.local",
+    "metrics": {
+      "cpu_pct": 30.3,
+      "mem_pct": 21.2,
+      "disk_pct": 38.5,
+      "uptime_s": 5487999,
+      "response_ms": 154.8,
+      "availability_pct": 99.73,
+      "status": "up"
+    }
+  },
+  {
+    "id": "CBS-APP-03",
+    "service_id": "SVC-CBS",
+    "kind": "app",
+    "hostname": "cbs-app-03.synthbank.local",
+    "metrics": {
+      "cpu_pct": 10.1,
+      "mem_pct": 26.3,
+      "disk_pct": 22.1,
+      "uptime_s": 11563512,
+      "response_ms": 64.2,
+      "availability_pct": 99.77,
+      "status": "up"
+    }
+  },
+  {
+    "id": "CBS-APP-04",
+    "service_id": "SVC-CBS",
+    "kind": "app",
+    "hostname": "cbs-app-04.synthbank.local",
+    "metrics": {
+      "cpu_pct": 48.0,
+      "mem_pct": 48.5,
+      "disk_pct": 46.5,
+      "uptime_s": 15210023,
+      "response_ms": 52.2,
+      "availability_pct": 99.42,
+      "status": "up"
+    }
+  },
+  {
+    "id": "CBS-DB-05",
+    "service_id": "SVC-CBS",
+    "kind": "db",
+    "hostname": "cbs-db-05.synthbank.local",
+    "metrics": {
+      "cpu_pct": 4.2,
+      "mem_pct": 64.6,
+      "disk_pct": 40.8,
+      "uptime_s": 12189570,
+      "availability_pct": 99.68,
+      "status": "up"
+    }
+  },
+  {
+    "id": "CBS-DB-06",
+    "service_id": "SVC-CBS",
+    "kind": "db",
+    "hostname": "cbs-db-06.synthbank.local",
+    "metrics": {
+      "cpu_pct": 24.6,
+      "mem_pct": 56.9,
+      "disk_pct": 54.3,
+      "uptime_s": 11814107,
+      "availability_pct": 99.68,
+      "status": "up"
+    }
+  },
+  {
+    "id": "CBS-DB-07",
+    "service_id": "SVC-CBS",
+    "kind": "db",
+    "hostname": "cbs-db-07.synthbank.local",
+    "metrics": {
+      "cpu_pct": 28.7,
+      "mem_pct": 42.0,
+      "disk_pct": 55.5,
+      "uptime_s": 16306047,
+      "availability_pct": 99.4,
+      "status": "up"
+    }
+  },
+  {
+    "id": "CBS-WEB-08",
+    "service_id": "SVC-CBS",
+    "kind": "web",
+    "hostname": "cbs-web-08.synthbank.local",
+    "metrics": {
+      "cpu_pct": 53.8,
+      "mem_pct": 28.3,
+      "disk_pct": 29.1,
+      "uptime_s": 9578321,
+      "response_ms": 223.9,
+      "availability_pct": 99.9,
+      "status": "up"
+    }
+  },
+  {
+    "id": "CBS-WEB-09",
+    "service_id": "SVC-CBS",
+    "kind": "web",
+    "hostname": "cbs-web-09.synthbank.local",
+    "metrics": {
+      "cpu_pct": 41.1,
+      "mem_pct": 61.3,
+      "disk_pct": 48.3,
+      "uptime_s": 15909797,
+      "response_ms": 134.4,
+      "availability_pct": 99.59,
+      "status": "up"
+    }
+  },
+  {
+    "id": "CBS-HOS-10",
+    "service_id": "SVC-CBS",
+    "kind": "host",
+    "hostname": "cbs-hos-10.synthbank.local",
+    "metrics": {
+      "cpu_pct": 9.3,
+      "mem_pct": 42.3,
+      "disk_pct": 42.2,
+      "uptime_s": 14392025,
+      "status": "up"
+    }
+  },
+  {
+    "id": "CBS-HOS-11",
+    "service_id": "SVC-CBS",
+    "kind": "host",
+    "hostname": "cbs-hos-11.synthbank.local",
+    "metrics": {
+      "cpu_pct": 15.3,
+      "mem_pct": 32.4,
+      "disk_pct": 50.7,
+      "uptime_s": 18000733,
+      "status": "up"
+    }
+  },
+  {
+    "id": "CBS-HOS-12",
+    "service_id": "SVC-CBS",
+    "kind": "host",
+    "hostname": "cbs-hos-12.synthbank.local",
+    "metrics": {
+      "cpu_pct": 23.5,
+      "mem_pct": 65.5,
+      "disk_pct": 59.6,
+      "uptime_s": 2287663,
+      "status": "up"
+    }
+  },
+  {
+    "id": "CBS-HOS-13",
+    "service_id": "SVC-CBS",
+    "kind": "host",
+    "hostname": "cbs-hos-13.synthbank.local",
+    "metrics": {
+      "cpu_pct": 31.3,
+      "mem_pct": 25.1,
+      "disk_pct": 15.4,
+      "uptime_s": 1046934,
+      "status": "up"
+    }
+  },
+  {
+    "id": "CBS-NET-14",
+    "service_id": "SVC-CBS",
+    "kind": "network",
+    "hostname": "cbs-net-14.synthbank.local",
+    "metrics": {
+      "cpu_pct": 41.6,
+      "mem_pct": 41.5,
+      "uptime_s": 7137629,
+      "if_in_bps": 853750323,
+      "if_out_bps": 273109912,
+      "status": "up"
+    }
+  },
+  {
+    "id": "CBS-NET-15",
+    "service_id": "SVC-CBS",
+    "kind": "network",
+    "hostname": "cbs-net-15.synthbank.local",
+    "metrics": {
+      "cpu_pct": 39.8,
+      "mem_pct": 41.4,
+      "uptime_s": 7548520,
+      "if_in_bps": 455891265,
+      "if_out_bps": 379871210,
+      "status": "up"
+    }
+  },
+  {
+    "id": "CBS-NET-16",
+    "service_id": "SVC-CBS",
+    "kind": "network",
+    "hostname": "cbs-net-16.synthbank.local",
+    "metrics": {
+      "cpu_pct": 16.5,
+      "mem_pct": 60.1,
+      "uptime_s": 14429847,
+      "if_in_bps": 864141942,
+      "if_out_bps": 539573794,
+      "status": "up"
+    }
+  },
+  {
+    "id": "IB-APP-01",
+    "service_id": "SVC-IB",
+    "kind": "app",
+    "hostname": "ib-app-01.synthbank.local",
+    "metrics": {
+      "cpu_pct": 94.0,
+      "mem_pct": 45.2,
+      "disk_pct": 33.9,
+      "uptime_s": 3996233,
+      "response_ms": 1850.0,
+      "availability_pct": 99.83,
+      "status": "degraded"
+    }
+  },
+  {
+    "id": "IB-APP-02",
+    "service_id": "SVC-IB",
+    "kind": "app",
+    "hostname": "ib-app-02.synthbank.local",
+    "metrics": {
+      "cpu_pct": 35.2,
+      "mem_pct": 43.3,
+      "disk_pct": 47.9,
+      "uptime_s": 3945750,
+      "response_ms": 146.4,
+      "availability_pct": 99.75,
+      "status": "up"
+    }
+  },
+  {
+    "id": "IB-APP-03",
+    "service_id": "SVC-IB",
+    "kind": "app",
+    "hostname": "ib-app-03.synthbank.local",
+    "metrics": {
+      "cpu_pct": 48.0,
+      "mem_pct": 21.3,
+      "disk_pct": 60.5,
+      "uptime_s": 6374662,
+      "response_ms": 49.9,
+      "availability_pct": 99.57,
+      "status": "up"
+    }
+  },
+  {
+    "id": "IB-APP-04",
+    "service_id": "SVC-IB",
+    "kind": "app",
+    "hostname": "ib-app-04.synthbank.local",
+    "metrics": {
+      "cpu_pct": 14.6,
+      "mem_pct": 36.1,
+      "disk_pct": 55.4,
+      "uptime_s": 10813995,
+      "response_ms": 60.4,
+      "availability_pct": 99.56,
+      "status": "up"
+    }
+  },
+  {
+    "id": "IB-DB-05",
+    "service_id": "SVC-IB",
+    "kind": "db",
+    "hostname": "ib-db-05.synthbank.local",
+    "metrics": {
+      "cpu_pct": 54.6,
+      "mem_pct": 66.2,
+      "disk_pct": 15.8,
+      "uptime_s": 9888344,
+      "availability_pct": 99.98,
+      "status": "up"
+    }
+  },
+  {
+    "id": "IB-DB-06",
+    "service_id": "SVC-IB",
+    "kind": "db",
+    "hostname": "ib-db-06.synthbank.local",
+    "metrics": {
+      "cpu_pct": 16.6,
+      "mem_pct": 68.4,
+      "disk_pct": 19.8,
+      "uptime_s": 6502286,
+      "availability_pct": 99.73,
+      "status": "up"
+    }
+  },
+  {
+    "id": "IB-WEB-07",
+    "service_id": "SVC-IB",
+    "kind": "web",
+    "hostname": "ib-web-07.synthbank.local",
+    "metrics": {
+      "cpu_pct": 33.5,
+      "mem_pct": 26.9,
+      "disk_pct": 18.6,
+      "uptime_s": 2824312,
+      "response_ms": 154.7,
+      "availability_pct": 99.85,
+      "status": "up"
+    }
+  },
+  {
+    "id": "IB-WEB-08",
+    "service_id": "SVC-IB",
+    "kind": "web",
+    "hostname": "ib-web-08.synthbank.local",
+    "metrics": {
+      "cpu_pct": 5.3,
+      "mem_pct": 41.9,
+      "disk_pct": 24.3,
+      "uptime_s": 13960235,
+      "response_ms": 80.0,
+      "availability_pct": 99.64,
+      "status": "up"
+    }
+  },
+  {
+    "id": "IB-WEB-09",
+    "service_id": "SVC-IB",
+    "kind": "web",
+    "hostname": "ib-web-09.synthbank.local",
+    "metrics": {
+      "cpu_pct": 12.7,
+      "mem_pct": 61.7,
+      "disk_pct": 41.9,
+      "uptime_s": 15110550,
+      "response_ms": 120.6,
+      "availability_pct": 99.88,
+      "status": "up"
+    }
+  },
+  {
+    "id": "IB-HOS-10",
+    "service_id": "SVC-IB",
+    "kind": "host",
+    "hostname": "ib-hos-10.synthbank.local",
+    "metrics": {
+      "cpu_pct": 9.1,
+      "mem_pct": 25.6,
+      "disk_pct": 27.0,
+      "uptime_s": 9096983,
+      "status": "up"
+    }
+  },
+  {
+    "id": "IB-HOS-11",
+    "service_id": "SVC-IB",
+    "kind": "host",
+    "hostname": "ib-hos-11.synthbank.local",
+    "metrics": {
+      "cpu_pct": 29.5,
+      "mem_pct": 55.2,
+      "disk_pct": 18.0,
+      "uptime_s": 10560412,
+      "status": "up"
+    }
+  },
+  {
+    "id": "IB-HOS-12",
+    "service_id": "SVC-IB",
+    "kind": "host",
+    "hostname": "ib-hos-12.synthbank.local",
+    "metrics": {
+      "cpu_pct": 49.8,
+      "mem_pct": 50.5,
+      "disk_pct": 59.1,
+      "uptime_s": 6435791,
+      "status": "up"
+    }
+  },
+  {
+    "id": "IB-NET-13",
+    "service_id": "SVC-IB",
+    "kind": "network",
+    "hostname": "ib-net-13.synthbank.local",
+    "metrics": {
+      "cpu_pct": 48.1,
+      "mem_pct": 58.0,
+      "uptime_s": 8737315,
+      "if_in_bps": 818647142,
+      "if_out_bps": 141369357,
+      "status": "up"
+    }
+  },
+  {
+    "id": "IB-NET-14",
+    "service_id": "SVC-IB",
+    "kind": "network",
+    "hostname": "ib-net-14.synthbank.local",
+    "metrics": {
+      "cpu_pct": 4.9,
+      "mem_pct": 65.6,
+      "uptime_s": 16965015,
+      "if_in_bps": 46428902,
+      "if_out_bps": 358505958,
+      "status": "up"
+    }
+  },
+  {
+    "id": "MOB-APP-01",
+    "service_id": "SVC-MOB",
+    "kind": "app",
+    "hostname": "mob-app-01.synthbank.local",
+    "metrics": {
+      "cpu_pct": 51.6,
+      "mem_pct": 47.9,
+      "disk_pct": 23.2,
+      "uptime_s": 4679460,
+      "response_ms": 229.7,
+      "availability_pct": 99.46,
+      "status": "up"
+    }
+  },
+  {
+    "id": "MOB-APP-02",
+    "service_id": "SVC-MOB",
+    "kind": "app",
+    "hostname": "mob-app-02.synthbank.local",
+    "metrics": {
+      "cpu_pct": 25.9,
+      "mem_pct": 54.1,
+      "disk_pct": 48.0,
+      "uptime_s": 12195997,
+      "response_ms": 138.7,
+      "availability_pct": 99.43,
+      "status": "up"
+    }
+  },
+  {
+    "id": "MOB-APP-03",
+    "service_id": "SVC-MOB",
+    "kind": "app",
+    "hostname": "mob-app-03.synthbank.local",
+    "metrics": {
+      "cpu_pct": 53.9,
+      "mem_pct": 53.8,
+      "disk_pct": 56.8,
+      "uptime_s": 8255200,
+      "response_ms": 194.3,
+      "availability_pct": 99.37,
+      "status": "up"
+    }
+  },
+  {
+    "id": "MOB-APP-04",
+    "service_id": "SVC-MOB",
+    "kind": "app",
+    "hostname": "mob-app-04.synthbank.local",
+    "metrics": {
+      "cpu_pct": 18.1,
+      "mem_pct": 35.0,
+      "disk_pct": 51.8,
+      "uptime_s": 15205347,
+      "response_ms": 206.3,
+      "availability_pct": 99.56,
+      "status": "up"
+    }
+  },
+  {
+    "id": "MOB-DB-05",
+    "service_id": "SVC-MOB",
+    "kind": "db",
+    "hostname": "mob-db-05.synthbank.local",
+    "metrics": {
+      "cpu_pct": 40.7,
+      "mem_pct": 55.8,
+      "disk_pct": 18.7,
+      "uptime_s": 3343828,
+      "availability_pct": 99.98,
+      "status": "up"
+    }
+  },
+  {
+    "id": "MOB-DB-06",
+    "service_id": "SVC-MOB",
+    "kind": "db",
+    "hostname": "mob-db-06.synthbank.local",
+    "metrics": {
+      "cpu_pct": 37.3,
+      "mem_pct": 32.3,
+      "disk_pct": 22.0,
+      "uptime_s": 441349,
+      "availability_pct": 99.46,
+      "status": "up"
+    }
+  },
+  {
+    "id": "MOB-WEB-07",
+    "service_id": "SVC-MOB",
+    "kind": "web",
+    "hostname": "mob-web-07.synthbank.local",
+    "metrics": {
+      "cpu_pct": 32.7,
+      "mem_pct": 48.9,
+      "disk_pct": 16.1,
+      "uptime_s": 13612338,
+      "response_ms": 69.0,
+      "availability_pct": 99.85,
+      "status": "up"
+    }
+  },
+  {
+    "id": "MOB-WEB-08",
+    "service_id": "SVC-MOB",
+    "kind": "web",
+    "hostname": "mob-web-08.synthbank.local",
+    "metrics": {
+      "cpu_pct": 36.6,
+      "mem_pct": 64.5,
+      "disk_pct": 28.2,
+      "uptime_s": 2185999,
+      "response_ms": 155.4,
+      "availability_pct": 99.73,
+      "status": "up"
+    }
+  },
+  {
+    "id": "MOB-HOS-09",
+    "service_id": "SVC-MOB",
+    "kind": "host",
+    "hostname": "mob-hos-09.synthbank.local",
+    "metrics": {
+      "cpu_pct": 27.6,
+      "mem_pct": 24.4,
+      "disk_pct": 57.5,
+      "uptime_s": 15679111,
+      "status": "up"
+    }
+  },
+  {
+    "id": "MOB-HOS-10",
+    "service_id": "SVC-MOB",
+    "kind": "host",
+    "hostname": "mob-hos-10.synthbank.local",
+    "metrics": {
+      "cpu_pct": 14.2,
+      "mem_pct": 67.9,
+      "disk_pct": 28.4,
+      "uptime_s": 14916729,
+      "status": "up"
+    }
+  },
+  {
+    "id": "MOB-HOS-11",
+    "service_id": "SVC-MOB",
+    "kind": "host",
+    "hostname": "mob-hos-11.synthbank.local",
+    "metrics": {
+      "cpu_pct": 26.1,
+      "mem_pct": 45.1,
+      "disk_pct": 26.9,
+      "uptime_s": 14877619,
+      "status": "up"
+    }
+  },
+  {
+    "id": "MOB-NET-12",
+    "service_id": "SVC-MOB",
+    "kind": "network",
+    "hostname": "mob-net-12.synthbank.local",
+    "metrics": {
+      "cpu_pct": 37.3,
+      "mem_pct": 49.0,
+      "uptime_s": 15250271,
+      "if_in_bps": 26430361,
+      "if_out_bps": 366762571,
+      "status": "up"
+    }
+  },
+  {
+    "id": "MOB-NET-13",
+    "service_id": "SVC-MOB",
+    "kind": "network",
+    "hostname": "mob-net-13.synthbank.local",
+    "metrics": {
+      "cpu_pct": 4.7,
+      "mem_pct": 32.5,
+      "uptime_s": 8244782,
+      "if_in_bps": 398206820,
+      "if_out_bps": 472992541,
+      "status": "up"
+    }
+  },
+  {
+    "id": "ATM-APP-01",
+    "service_id": "SVC-ATM",
+    "kind": "app",
+    "hostname": "atm-app-01.synthbank.local",
+    "metrics": {
+      "cpu_pct": 26.8,
+      "mem_pct": 35.8,
+      "disk_pct": 33.6,
+      "uptime_s": 11706960,
+      "response_ms": 212.5,
+      "availability_pct": 99.34,
+      "status": "up"
+    }
+  },
+  {
+    "id": "ATM-APP-02",
+    "service_id": "SVC-ATM",
+    "kind": "app",
+    "hostname": "atm-app-02.synthbank.local",
+    "metrics": {
+      "cpu_pct": 38.1,
+      "mem_pct": 65.0,
+      "disk_pct": 48.7,
+      "uptime_s": 10413490,
+      "response_ms": 129.9,
+      "availability_pct": 99.87,
+      "status": "up"
+    }
+  },
+  {
+    "id": "ATM-APP-03",
+    "service_id": "SVC-ATM",
+    "kind": "app",
+    "hostname": "atm-app-03.synthbank.local",
+    "metrics": {
+      "cpu_pct": 5.2,
+      "mem_pct": 49.5,
+      "disk_pct": 55.7,
+      "uptime_s": 12930298,
+      "response_ms": 63.7,
+      "availability_pct": 99.41,
+      "status": "up"
+    }
+  },
+  {
+    "id": "ATM-DB-04",
+    "service_id": "SVC-ATM",
+    "kind": "db",
+    "hostname": "atm-db-04.synthbank.local",
+    "metrics": {
+      "cpu_pct": 30.7,
+      "mem_pct": 48.5,
+      "disk_pct": 23.0,
+      "uptime_s": 4378236,
+      "availability_pct": 99.34,
+      "status": "up"
+    }
+  },
+  {
+    "id": "ATM-DB-05",
+    "service_id": "SVC-ATM",
+    "kind": "db",
+    "hostname": "atm-db-05.synthbank.local",
+    "metrics": {
+      "cpu_pct": 31.0,
+      "mem_pct": 52.0,
+      "disk_pct": 49.6,
+      "uptime_s": 3029200,
+      "availability_pct": 99.62,
+      "status": "up"
+    }
+  },
+  {
+    "id": "ATM-HOS-06",
+    "service_id": "SVC-ATM",
+    "kind": "host",
+    "hostname": "atm-hos-06.synthbank.local",
+    "metrics": {
+      "cpu_pct": 28.7,
+      "mem_pct": 44.0,
+      "disk_pct": 56.5,
+      "uptime_s": 18266790,
+      "status": "up"
+    }
+  },
+  {
+    "id": "ATM-HOS-07",
+    "service_id": "SVC-ATM",
+    "kind": "host",
+    "hostname": "atm-hos-07.synthbank.local",
+    "metrics": {
+      "cpu_pct": 5.9,
+      "mem_pct": 31.0,
+      "disk_pct": 26.2,
+      "uptime_s": 15569519,
+      "status": "up"
+    }
+  },
+  {
+    "id": "ATM-HOS-08",
+    "service_id": "SVC-ATM",
+    "kind": "host",
+    "hostname": "atm-hos-08.synthbank.local",
+    "metrics": {
+      "cpu_pct": 50.5,
+      "mem_pct": 34.0,
+      "disk_pct": 30.0,
+      "uptime_s": 2391049,
+      "status": "up"
+    }
+  },
+  {
+    "id": "ATM-NET-09",
+    "service_id": "SVC-ATM",
+    "kind": "network",
+    "hostname": "atm-net-09.synthbank.local",
+    "metrics": {
+      "cpu_pct": 30.8,
+      "mem_pct": 47.1,
+      "uptime_s": 3751699,
+      "if_in_bps": 265889231,
+      "if_out_bps": 494366636,
+      "status": "up"
+    }
+  },
+  {
+    "id": "ATM-NET-10",
+    "service_id": "SVC-ATM",
+    "kind": "network",
+    "hostname": "atm-net-10.synthbank.local",
+    "metrics": {
+      "cpu_pct": 52.7,
+      "mem_pct": 29.6,
+      "uptime_s": 12276112,
+      "if_in_bps": 232829020,
+      "if_out_bps": 394225064,
+      "status": "up"
+    }
+  },
+  {
+    "id": "ATM-NET-11",
+    "service_id": "SVC-ATM",
+    "kind": "network",
+    "hostname": "atm-net-11.synthbank.local",
+    "metrics": {
+      "cpu_pct": 21.3,
+      "mem_pct": 20.2,
+      "uptime_s": 9037848,
+      "if_in_bps": 203716794,
+      "if_out_bps": 199275488,
+      "status": "up"
+    }
+  },
+  {
+    "id": "ATM-NET-12",
+    "service_id": "SVC-ATM",
+    "kind": "network",
+    "hostname": "atm-net-12.synthbank.local",
+    "metrics": {
+      "cpu_pct": null,
+      "mem_pct": null,
+      "uptime_s": null,
+      "if_in_bps": null,
+      "if_out_bps": null,
+      "status": "down"
+    }
+  },
+  {
+    "id": "PAY-APP-01",
+    "service_id": "SVC-PAY",
+    "kind": "app",
+    "hostname": "pay-app-01.synthbank.local",
+    "metrics": {
+      "cpu_pct": 8.9,
+      "mem_pct": 31.3,
+      "disk_pct": 15.7,
+      "uptime_s": 3137492,
+      "response_ms": 130.2,
+      "availability_pct": 99.96,
+      "status": "up"
+    }
+  },
+  {
+    "id": "PAY-APP-02",
+    "service_id": "SVC-PAY",
+    "kind": "app",
+    "hostname": "pay-app-02.synthbank.local",
+    "metrics": {
+      "cpu_pct": 4.5,
+      "mem_pct": 37.3,
+      "disk_pct": 32.5,
+      "uptime_s": 1227634,
+      "response_ms": 132.1,
+      "availability_pct": 99.47,
+      "status": "up"
+    }
+  },
+  {
+    "id": "PAY-APP-03",
+    "service_id": "SVC-PAY",
+    "kind": "app",
+    "hostname": "pay-app-03.synthbank.local",
+    "metrics": {
+      "cpu_pct": 21.8,
+      "mem_pct": 63.5,
+      "disk_pct": 28.0,
+      "uptime_s": 14488803,
+      "response_ms": 197.8,
+      "availability_pct": 99.56,
+      "status": "up"
+    }
+  },
+  {
+    "id": "PAY-APP-04",
+    "service_id": "SVC-PAY",
+    "kind": "app",
+    "hostname": "pay-app-04.synthbank.local",
+    "metrics": {
+      "cpu_pct": 53.9,
+      "mem_pct": 50.8,
+      "disk_pct": 59.8,
+      "uptime_s": 4579813,
+      "response_ms": 100.2,
+      "availability_pct": 99.58,
+      "status": "up"
+    }
+  },
+  {
+    "id": "PAY-DB-05",
+    "service_id": "SVC-PAY",
+    "kind": "db",
+    "hostname": "pay-db-05.synthbank.local",
+    "metrics": {
+      "cpu_pct": 48.1,
+      "mem_pct": 35.7,
+      "disk_pct": 56.0,
+      "uptime_s": 14856112,
+      "availability_pct": 99.56,
+      "status": "up"
+    }
+  },
+  {
+    "id": "PAY-DB-06",
+    "service_id": "SVC-PAY",
+    "kind": "db",
+    "hostname": "pay-db-06.synthbank.local",
+    "metrics": {
+      "cpu_pct": 42.2,
+      "mem_pct": 54.4,
+      "disk_pct": 58.4,
+      "uptime_s": 5865156,
+      "availability_pct": 99.93,
+      "status": "up"
+    }
+  },
+  {
+    "id": "PAY-DB-07",
+    "service_id": "SVC-PAY",
+    "kind": "db",
+    "hostname": "pay-db-07.synthbank.local",
+    "metrics": {
+      "cpu_pct": 38.5,
+      "mem_pct": 54.1,
+      "disk_pct": 35.4,
+      "uptime_s": 17266618,
+      "availability_pct": 99.82,
+      "status": "up"
+    }
+  },
+  {
+    "id": "PAY-WEB-08",
+    "service_id": "SVC-PAY",
+    "kind": "web",
+    "hostname": "pay-web-08.synthbank.local",
+    "metrics": {
+      "cpu_pct": 17.0,
+      "mem_pct": 49.4,
+      "disk_pct": 17.9,
+      "uptime_s": 3906488,
+      "response_ms": 217.6,
+      "availability_pct": 99.49,
+      "status": "up"
+    }
+  },
+  {
+    "id": "PAY-WEB-09",
+    "service_id": "SVC-PAY",
+    "kind": "web",
+    "hostname": "pay-web-09.synthbank.local",
+    "metrics": {
+      "cpu_pct": 29.5,
+      "mem_pct": 31.7,
+      "disk_pct": 45.1,
+      "uptime_s": 9509754,
+      "response_ms": 220.7,
+      "availability_pct": 99.59,
+      "status": "up"
+    }
+  },
+  {
+    "id": "PAY-HOS-10",
+    "service_id": "SVC-PAY",
+    "kind": "host",
+    "hostname": "pay-hos-10.synthbank.local",
+    "metrics": {
+      "cpu_pct": 34.5,
+      "mem_pct": 24.9,
+      "disk_pct": 49.8,
+      "uptime_s": 1271438,
+      "status": "up"
+    }
+  },
+  {
+    "id": "PAY-HOS-11",
+    "service_id": "SVC-PAY",
+    "kind": "host",
+    "hostname": "pay-hos-11.synthbank.local",
+    "metrics": {
+      "cpu_pct": 19.9,
+      "mem_pct": 40.0,
+      "disk_pct": 36.0,
+      "uptime_s": 9386436,
+      "status": "up"
+    }
+  },
+  {
+    "id": "PAY-HOS-12",
+    "service_id": "SVC-PAY",
+    "kind": "host",
+    "hostname": "pay-hos-12.synthbank.local",
+    "metrics": {
+      "cpu_pct": 40.1,
+      "mem_pct": 35.6,
+      "disk_pct": 62.9,
+      "uptime_s": 16368115,
+      "status": "up"
+    }
+  },
+  {
+    "id": "PAY-NET-13",
+    "service_id": "SVC-PAY",
+    "kind": "network",
+    "hostname": "pay-net-13.synthbank.local",
+    "metrics": {
+      "cpu_pct": 45.9,
+      "mem_pct": 57.5,
+      "uptime_s": 15128218,
+      "if_in_bps": 846481159,
+      "if_out_bps": 732990980,
+      "status": "up"
+    }
+  },
+  {
+    "id": "PAY-NET-14",
+    "service_id": "SVC-PAY",
+    "kind": "network",
+    "hostname": "pay-net-14.synthbank.local",
+    "metrics": {
+      "cpu_pct": 42.1,
+      "mem_pct": 25.0,
+      "uptime_s": 1989245,
+      "if_in_bps": 426800234,
+      "if_out_bps": 718915123,
+      "status": "up"
+    }
+  },
+  {
+    "id": "CARD-APP-01",
+    "service_id": "SVC-CARD",
+    "kind": "app",
+    "hostname": "card-app-01.synthbank.local",
+    "metrics": {
+      "cpu_pct": 44.9,
+      "mem_pct": 24.2,
+      "disk_pct": 45.1,
+      "uptime_s": 17021141,
+      "response_ms": 180.7,
+      "availability_pct": 99.9,
+      "status": "up"
+    }
+  },
+  {
+    "id": "CARD-APP-02",
+    "service_id": "SVC-CARD",
+    "kind": "app",
+    "hostname": "card-app-02.synthbank.local",
+    "metrics": {
+      "cpu_pct": 15.6,
+      "mem_pct": 59.9,
+      "disk_pct": 36.2,
+      "uptime_s": 2525402,
+      "response_ms": 89.7,
+      "availability_pct": 99.23,
+      "status": "up"
+    }
+  },
+  {
+    "id": "CARD-APP-03",
+    "service_id": "SVC-CARD",
+    "kind": "app",
+    "hostname": "card-app-03.synthbank.local",
+    "metrics": {
+      "cpu_pct": 21.7,
+      "mem_pct": 33.1,
+      "disk_pct": 41.3,
+      "uptime_s": 17138492,
+      "response_ms": 55.7,
+      "availability_pct": 99.58,
+      "status": "up"
+    }
+  },
+  {
+    "id": "CARD-DB-04",
+    "service_id": "SVC-CARD",
+    "kind": "db",
+    "hostname": "card-db-04.synthbank.local",
+    "metrics": {
+      "cpu_pct": 29.6,
+      "mem_pct": 22.9,
+      "disk_pct": 50.0,
+      "uptime_s": 5238763,
+      "availability_pct": 99.68,
+      "status": "up"
+    }
+  },
+  {
+    "id": "CARD-DB-05",
+    "service_id": "SVC-CARD",
+    "kind": "db",
+    "hostname": "card-db-05.synthbank.local",
+    "metrics": {
+      "cpu_pct": 21.7,
+      "mem_pct": 33.5,
+      "disk_pct": 46.7,
+      "uptime_s": 4200723,
+      "availability_pct": 99.23,
+      "status": "up"
+    }
+  },
+  {
+    "id": "CARD-WEB-06",
+    "service_id": "SVC-CARD",
+    "kind": "web",
+    "hostname": "card-web-06.synthbank.local",
+    "metrics": {
+      "cpu_pct": 13.3,
+      "mem_pct": 37.7,
+      "disk_pct": 35.7,
+      "uptime_s": 11545718,
+      "response_ms": 191.6,
+      "availability_pct": 99.28,
+      "status": "up"
+    }
+  },
+  {
+    "id": "CARD-WEB-07",
+    "service_id": "SVC-CARD",
+    "kind": "web",
+    "hostname": "card-web-07.synthbank.local",
+    "metrics": {
+      "cpu_pct": 43.0,
+      "mem_pct": 68.8,
+      "disk_pct": 51.9,
+      "uptime_s": 7225019,
+      "response_ms": 176.8,
+      "availability_pct": 99.56,
+      "status": "up"
+    }
+  },
+  {
+    "id": "CARD-HOS-08",
+    "service_id": "SVC-CARD",
+    "kind": "host",
+    "hostname": "card-hos-08.synthbank.local",
+    "metrics": {
+      "cpu_pct": 8.2,
+      "mem_pct": 55.2,
+      "disk_pct": 18.0,
+      "uptime_s": 5440507,
+      "status": "up"
+    }
+  },
+  {
+    "id": "CARD-HOS-09",
+    "service_id": "SVC-CARD",
+    "kind": "host",
+    "hostname": "card-hos-09.synthbank.local",
+    "metrics": {
+      "cpu_pct": 46.3,
+      "mem_pct": 66.3,
+      "disk_pct": 53.2,
+      "uptime_s": 16764573,
+      "status": "up"
+    }
+  },
+  {
+    "id": "CARD-HOS-10",
+    "service_id": "SVC-CARD",
+    "kind": "host",
+    "hostname": "card-hos-10.synthbank.local",
+    "metrics": {
+      "cpu_pct": 12.8,
+      "mem_pct": 58.7,
+      "disk_pct": 17.1,
+      "uptime_s": 14085921,
+      "status": "up"
+    }
+  },
+  {
+    "id": "CARD-NET-11",
+    "service_id": "SVC-CARD",
+    "kind": "network",
+    "hostname": "card-net-11.synthbank.local",
+    "metrics": {
+      "cpu_pct": 6.7,
+      "mem_pct": 61.6,
+      "uptime_s": 13761413,
+      "if_in_bps": 133076679,
+      "if_out_bps": 696250028,
+      "status": "up"
+    }
+  },
+  {
+    "id": "CARD-NET-12",
+    "service_id": "SVC-CARD",
+    "kind": "network",
+    "hostname": "card-net-12.synthbank.local",
+    "metrics": {
+      "cpu_pct": 52.6,
+      "mem_pct": 20.9,
+      "uptime_s": 15300254,
+      "if_in_bps": 581156433,
+      "if_out_bps": 768059014,
+      "status": "up"
+    }
+  },
+  {
+    "id": "MAIL-APP-01",
+    "service_id": "SVC-MAIL",
+    "kind": "app",
+    "hostname": "mail-app-01.synthbank.local",
+    "metrics": {
+      "cpu_pct": 21.5,
+      "mem_pct": 26.1,
+      "disk_pct": 44.4,
+      "uptime_s": 9709334,
+      "response_ms": 122.2,
+      "availability_pct": 99.9,
+      "status": "up"
+    }
+  },
+  {
+    "id": "MAIL-APP-02",
+    "service_id": "SVC-MAIL",
+    "kind": "app",
+    "hostname": "mail-app-02.synthbank.local",
+    "metrics": {
+      "cpu_pct": 41.3,
+      "mem_pct": 57.7,
+      "disk_pct": 47.4,
+      "uptime_s": 12411405,
+      "response_ms": 163.9,
+      "availability_pct": 99.85,
+      "status": "up"
+    }
+  },
+  {
+    "id": "MAIL-APP-03",
+    "service_id": "SVC-MAIL",
+    "kind": "app",
+    "hostname": "mail-app-03.synthbank.local",
+    "metrics": {
+      "cpu_pct": 4.1,
+      "mem_pct": 24.9,
+      "disk_pct": 15.0,
+      "uptime_s": 1774981,
+      "response_ms": 94.2,
+      "availability_pct": 99.4,
+      "status": "up"
+    }
+  },
+  {
+    "id": "MAIL-DB-04",
+    "service_id": "SVC-MAIL",
+    "kind": "db",
+    "hostname": "mail-db-04.synthbank.local",
+    "metrics": {
+      "cpu_pct": 47.1,
+      "mem_pct": 25.8,
+      "disk_pct": 38.0,
+      "uptime_s": 8163475,
+      "availability_pct": 99.94,
+      "status": "up"
+    }
+  },
+  {
+    "id": "MAIL-WEB-05",
+    "service_id": "SVC-MAIL",
+    "kind": "web",
+    "hostname": "mail-web-05.synthbank.local",
+    "metrics": {
+      "cpu_pct": 40.6,
+      "mem_pct": 41.9,
+      "disk_pct": 64.7,
+      "uptime_s": 13233182,
+      "response_ms": 108.0,
+      "availability_pct": 99.2,
+      "status": "up"
+    }
+  },
+  {
+    "id": "MAIL-WEB-06",
+    "service_id": "SVC-MAIL",
+    "kind": "web",
+    "hostname": "mail-web-06.synthbank.local",
+    "metrics": {
+      "cpu_pct": 39.7,
+      "mem_pct": 38.6,
+      "disk_pct": 58.4,
+      "uptime_s": 7789552,
+      "response_ms": 66.6,
+      "availability_pct": 99.63,
+      "status": "up"
+    }
+  },
+  {
+    "id": "MAIL-HOS-07",
+    "service_id": "SVC-MAIL",
+    "kind": "host",
+    "hostname": "mail-hos-07.synthbank.local",
+    "metrics": {
+      "cpu_pct": 21.5,
+      "mem_pct": 44.1,
+      "disk_pct": 56.8,
+      "uptime_s": 11365994,
+      "status": "up"
+    }
+  },
+  {
+    "id": "MAIL-HOS-08",
+    "service_id": "SVC-MAIL",
+    "kind": "host",
+    "hostname": "mail-hos-08.synthbank.local",
+    "metrics": {
+      "cpu_pct": 31.3,
+      "mem_pct": 26.7,
+      "disk_pct": 29.8,
+      "uptime_s": 3609957,
+      "status": "up"
+    }
+  },
+  {
+    "id": "MAIL-HOS-09",
+    "service_id": "SVC-MAIL",
+    "kind": "host",
+    "hostname": "mail-hos-09.synthbank.local",
+    "metrics": {
+      "cpu_pct": 9.3,
+      "mem_pct": 27.2,
+      "disk_pct": 27.9,
+      "uptime_s": 14969119,
+      "status": "up"
+    }
+  },
+  {
+    "id": "MAIL-NET-10",
+    "service_id": "SVC-MAIL",
+    "kind": "network",
+    "hostname": "mail-net-10.synthbank.local",
+    "metrics": {
+      "cpu_pct": 26.7,
+      "mem_pct": 34.6,
+      "uptime_s": 1996741,
+      "if_in_bps": 153885775,
+      "if_out_bps": 530543465,
+      "status": "up"
+    }
+  },
+  {
+    "id": "MAIL-NET-11",
+    "service_id": "SVC-MAIL",
+    "kind": "network",
+    "hostname": "mail-net-11.synthbank.local",
+    "metrics": {
+      "cpu_pct": 54.3,
+      "mem_pct": 60.9,
+      "uptime_s": 4862339,
+      "if_in_bps": 330107403,
+      "if_out_bps": 687018710,
+      "status": "up"
+    }
+  },
+  {
+    "id": "CRM-APP-01",
+    "service_id": "SVC-CRM",
+    "kind": "app",
+    "hostname": "crm-app-01.synthbank.local",
+    "metrics": {
+      "cpu_pct": 44.8,
+      "mem_pct": 32.7,
+      "disk_pct": 20.5,
+      "uptime_s": 6418465,
+      "response_ms": 108.6,
+      "availability_pct": 99.67,
+      "status": "up"
+    }
+  },
+  {
+    "id": "CRM-APP-02",
+    "service_id": "SVC-CRM",
+    "kind": "app",
+    "hostname": "crm-app-02.synthbank.local",
+    "metrics": {
+      "cpu_pct": 27.6,
+      "mem_pct": 20.9,
+      "disk_pct": 61.2,
+      "uptime_s": 10251214,
+      "response_ms": 174.4,
+      "availability_pct": 99.54,
+      "status": "up"
+    }
+  },
+  {
+    "id": "CRM-APP-03",
+    "service_id": "SVC-CRM",
+    "kind": "app",
+    "hostname": "crm-app-03.synthbank.local",
+    "metrics": {
+      "cpu_pct": 5.0,
+      "mem_pct": 25.3,
+      "disk_pct": 38.5,
+      "uptime_s": 18771674,
+      "response_ms": 51.1,
+      "availability_pct": 99.22,
+      "status": "up"
+    }
+  },
+  {
+    "id": "CRM-DB-04",
+    "service_id": "SVC-CRM",
+    "kind": "db",
+    "hostname": "crm-db-04.synthbank.local",
+    "metrics": {
+      "cpu_pct": 45.6,
+      "mem_pct": 66.0,
+      "disk_pct": 53.4,
+      "uptime_s": 2549077,
+      "availability_pct": 99.48,
+      "status": "up"
+    }
+  },
+  {
+    "id": "CRM-DB-05",
+    "service_id": "SVC-CRM",
+    "kind": "db",
+    "hostname": "crm-db-05.synthbank.local",
+    "metrics": {
+      "cpu_pct": 20.9,
+      "mem_pct": 25.5,
+      "disk_pct": 23.1,
+      "uptime_s": 6379601,
+      "availability_pct": 99.58,
+      "status": "up"
+    }
+  },
+  {
+    "id": "CRM-WEB-06",
+    "service_id": "SVC-CRM",
+    "kind": "web",
+    "hostname": "crm-web-06.synthbank.local",
+    "metrics": {
+      "cpu_pct": 8.7,
+      "mem_pct": 36.8,
+      "disk_pct": 61.4,
+      "uptime_s": 7207996,
+      "response_ms": 103.7,
+      "availability_pct": 99.52,
+      "status": "up"
+    }
+  },
+  {
+    "id": "CRM-WEB-07",
+    "service_id": "SVC-CRM",
+    "kind": "web",
+    "hostname": "crm-web-07.synthbank.local",
+    "metrics": {
+      "cpu_pct": 26.8,
+      "mem_pct": 65.8,
+      "disk_pct": 56.8,
+      "uptime_s": 3905950,
+      "response_ms": 223.8,
+      "availability_pct": 99.24,
+      "status": "up"
+    }
+  },
+  {
+    "id": "CRM-HOS-08",
+    "service_id": "SVC-CRM",
+    "kind": "host",
+    "hostname": "crm-hos-08.synthbank.local",
+    "metrics": {
+      "cpu_pct": 51.4,
+      "mem_pct": 34.7,
+      "uptime_s": 18148831,
+      "status": "up"
+    }
+  },
+  {
+    "id": "CRM-HOS-09",
+    "service_id": "SVC-CRM",
+    "kind": "host",
+    "hostname": "crm-hos-09.synthbank.local",
+    "metrics": {
+      "cpu_pct": 40.9,
+      "mem_pct": 59.7,
+      "disk_pct": 28.2,
+      "uptime_s": 2238846,
+      "status": "up"
+    }
+  },
+  {
+    "id": "CRM-NET-10",
+    "service_id": "SVC-CRM",
+    "kind": "network",
+    "hostname": "crm-net-10.synthbank.local",
+    "metrics": {
+      "cpu_pct": 29.4,
+      "mem_pct": 54.5,
+      "uptime_s": 10895513,
+      "if_in_bps": 745116181,
+      "if_out_bps": 808986594,
+      "status": "up"
+    }
+  },
+  {
+    "id": "TRE-APP-01",
+    "service_id": "SVC-TRE",
+    "kind": "app",
+    "hostname": "tre-app-01.synthbank.local",
+    "metrics": {
+      "cpu_pct": 15.5,
+      "mem_pct": 30.9,
+      "disk_pct": 46.2,
+      "uptime_s": 9832303,
+      "response_ms": 152.4,
+      "availability_pct": 99.65,
+      "status": "up"
+    }
+  },
+  {
+    "id": "TRE-APP-02",
+    "service_id": "SVC-TRE",
+    "kind": "app",
+    "hostname": "tre-app-02.synthbank.local",
+    "metrics": {
+      "cpu_pct": 31.3,
+      "mem_pct": 33.6,
+      "disk_pct": 32.9,
+      "uptime_s": 13608590,
+      "response_ms": 208.1,
+      "availability_pct": 99.79,
+      "status": "up"
+    }
+  },
+  {
+    "id": "TRE-APP-03",
+    "service_id": "SVC-TRE",
+    "kind": "app",
+    "hostname": "tre-app-03.synthbank.local",
+    "metrics": {
+      "cpu_pct": 23.9,
+      "mem_pct": 53.1,
+      "disk_pct": 32.7,
+      "uptime_s": 9426352,
+      "response_ms": 166.0,
+      "availability_pct": 99.25,
+      "status": "up"
+    }
+  },
+  {
+    "id": "TRE-DB-04",
+    "service_id": "SVC-TRE",
+    "kind": "db",
+    "hostname": "tre-db-04.synthbank.local",
+    "metrics": {
+      "cpu_pct": 5.1,
+      "mem_pct": 26.2,
+      "disk_pct": 54.6,
+      "uptime_s": 17655448,
+      "availability_pct": 99.26,
+      "status": "up"
+    }
+  },
+  {
+    "id": "TRE-DB-05",
+    "service_id": "SVC-TRE",
+    "kind": "db",
+    "hostname": "tre-db-05.synthbank.local",
+    "metrics": {
+      "cpu_pct": 51.9,
+      "mem_pct": 22.1,
+      "disk_pct": 60.9,
+      "uptime_s": 662616,
+      "availability_pct": 99.58,
+      "status": "up"
+    }
+  },
+  {
+    "id": "TRE-WEB-06",
+    "service_id": "SVC-TRE",
+    "kind": "web",
+    "hostname": "tre-web-06.synthbank.local",
+    "metrics": {
+      "cpu_pct": 50.3,
+      "mem_pct": 27.5,
+      "disk_pct": 53.4,
+      "uptime_s": 18545512,
+      "response_ms": 41.0,
+      "availability_pct": 99.44,
+      "status": "up"
+    }
+  },
+  {
+    "id": "TRE-HOS-07",
+    "service_id": "SVC-TRE",
+    "kind": "host",
+    "hostname": "tre-hos-07.synthbank.local",
+    "metrics": {
+      "cpu_pct": 28.7,
+      "mem_pct": 69.8,
+      "disk_pct": 24.5,
+      "uptime_s": 13916634,
+      "status": "up"
+    }
+  },
+  {
+    "id": "TRE-HOS-08",
+    "service_id": "SVC-TRE",
+    "kind": "host",
+    "hostname": "tre-hos-08.synthbank.local",
+    "metrics": {
+      "cpu_pct": 49.6,
+      "mem_pct": 61.3,
+      "disk_pct": 48.0,
+      "uptime_s": 16134806,
+      "status": "up"
+    }
+  },
+  {
+    "id": "TRE-NET-09",
+    "service_id": "SVC-TRE",
+    "kind": "network",
+    "hostname": "tre-net-09.synthbank.local",
+    "metrics": {
+      "cpu_pct": 49.4,
+      "mem_pct": 34.2,
+      "uptime_s": 17454450,
+      "if_in_bps": 351532495,
+      "if_out_bps": 528917535,
+      "status": "up"
+    }
+  }
+]

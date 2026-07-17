@@ -1,0 +1,4 @@
+# Severity rules — map raw alert signals to business-impact severity for UCBs.
+# First-cut placeholder; populated in a later workstream (W6/W8). Structure
+# mirrors the default pack so the pack validates and loads today.
+rules: []

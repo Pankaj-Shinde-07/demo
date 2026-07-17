@@ -1,0 +1,5 @@
+# CMDB mappings — industry-specific CI types, criticality tiers, and
+# business-service shapes. Empty for the default pack.
+ci_types: []
+criticality_tiers: []
+business_services: []

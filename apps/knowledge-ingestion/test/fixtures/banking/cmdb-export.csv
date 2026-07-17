@@ -1,0 +1,17 @@
+ci_id,ci_name,ci_type,criticality_tier,business_service,technical_owner,location
+CI-0001,CBS App Node 1,cbs_application_server,tier_1,core_banking,core.ops@synthbank.example,DC-Primary
+CI-0002,CBS DB Node 1,cbs_database_server,tier_1,core_banking,dba.team@synthbank.example,DC-Primary
+CI-0003,CBS Hosted Service,cbs_hosted_service,tier_1,core_banking,vendor.mgmt@synthbank.example,Hosted-Shared
+CI-0004,UPI Switch 1,upi_switch,tier_1,upi_imps,payments.ops@synthbank.example,DC-Primary
+CI-0005,Sponsor Bank Link A,sponsor_bank_link,tier_1,upi_imps,payments.ops@synthbank.example,WAN-Edge
+CI-0006,NPCI Link A,npci_link,tier_1,upi_imps,payments.ops@synthbank.example,WAN-Edge
+CI-0007,Payment Gateway 1,payment_gateway,tier_1,upi_imps,payments.ops@synthbank.example,DC-Primary
+CI-0008,ATM Switch 1,atm_switch,tier_1,atm_card_services,channels.ops@synthbank.example,DC-Primary
+CI-0009,HSM Device 1,hsm_device,tier_1,atm_card_services,security.ops@synthbank.example,DC-Primary
+CI-0010,Sponsor Bank Link B (DR),sponsor_bank_link,tier_1,neft_rtgs,payments.ops@synthbank.example,DC-DR
+CI-0011,Core Router 1,core_router,tier_2,branch_wan,network.ops@synthbank.example,DC-Primary
+CI-0012,Branch Router BR-014,branch_router,tier_2,branch_wan,network.ops@synthbank.example,Branch-014
+CI-0013,Firewall Edge 1,firewall,tier_2,branch_wan,security.ops@synthbank.example,WAN-Edge
+CI-0014,DR Site Node 1,dr_site_node,tier_1,core_banking,bcp.team@synthbank.example,DC-DR
+CI-0015,Backup System 1,backup_system,tier_3,document_management,infra.ops@synthbank.example,DC-Primary
+CI-0016,Regulatory Reporting Server,cbs_application_server,tier_2,regulatory_reporting,compliance.ops@synthbank.example,DC-Primary

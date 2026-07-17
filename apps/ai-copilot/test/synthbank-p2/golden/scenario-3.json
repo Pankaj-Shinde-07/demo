@@ -1,0 +1,30 @@
+{
+  "scenario": "scenario-3",
+  "name": "Branch failure (branch-local)",
+  "synthetic": true,
+  "label": "SynthBank synthetic data",
+  "window": { "dayOffset": 3, "hours": 6 },
+  "correlation": {
+    "rawAlertCount": 2,
+    "incidents": 1,
+    "rootCiExternalId": "CI-0093",
+    "note": "branch-local — alerts scoped to the branch, NO estate-wide cascade"
+  },
+  "rootCause": { "type": "ci_failure", "ciExternalId": "CI-0093", "changeRef": null },
+  "impact": {
+    "rootCiExternalId": "CI-0093",
+    "expectedServices": ["atm_card_services", "core_banking", "internet_mobile_banking", "neft_rtgs", "upi_imps", "branch_wan"],
+    "expectedCustomers": 5000,
+    "expectedBranches": 1,
+    "derivation": "traversal over §FROZEN — branch-local discrimination (5,000, NOT 450,000) holds under motion"
+  },
+  "recommendedAction": {
+    "mode": "propose",
+    "autoExecute": false,
+    "text": "Dispatch to Branch BR-011 (power/ISP/device); confirm scope is single-branch — human attests/executes."
+  },
+  "honestGaps": [
+    "the failure cause (power vs ISP vs on-site device) is not determinable from telemetry alone"
+  ],
+  "securityFeedGated": false
+}

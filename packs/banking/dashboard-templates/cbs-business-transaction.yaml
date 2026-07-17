@@ -1,0 +1,116 @@
+schemaVersion: 1
+key: cbs-business-transaction
+title: CBS Business Transaction Dashboard
+persona: cbs_admin
+layout:
+  grid:
+    cols: 12
+  items:
+    - widgetId: cbs-avail
+      x: 0
+      'y': 0
+      w: 4
+      h: 4
+    - widgetId: txn-vol
+      x: 4
+      'y': 0
+      w: 4
+      h: 4
+    - widgetId: failed-txn
+      x: 8
+      'y': 0
+      w: 4
+      h: 4
+    - widgetId: cbs-dep
+      x: 0
+      'y': 4
+      w: 4
+      h: 4
+    - widgetId: db-health
+      x: 4
+      'y': 4
+      w: 4
+      h: 4
+widgets:
+  - id: cbs-avail
+    title: CBS availability
+    query:
+      source: provider
+      dataClass: metrics
+      scope:
+        level: fleet
+      aggregation: pct_up
+      window: 24h
+      filters: []
+    requiredDataClasses:
+      - metrics
+    type: kpi_tile
+    unit: percent
+    format: percent
+  - id: txn-vol
+    title: Transaction latency trend
+    query:
+      source: provider
+      dataClass: metrics
+      scope:
+        level: fleet
+      aggregation: avg
+      window: all
+      filters: []
+    requiredDataClasses:
+      - metrics
+    type: trend_chart
+    metric: latency_ms
+    window: 7d
+    aggregation: avg
+  - id: failed-txn
+    title: Recent alarms
+    query:
+      source: provider
+      dataClass: alerts
+      scope:
+        level: tenant
+      aggregation: latest
+      window: all
+      filters: []
+      topN: 5
+    requiredDataClasses:
+      - alerts
+    type: top_n_table
+    columns:
+      - alert
+    'n': 10
+    sortDir: desc
+  - id: cbs-dep
+    title: CBS dependencies
+    query:
+      source: provider
+      dataClass: cmdb_relationships
+      scope:
+        level: ci
+        ref: CI-0002
+      aggregation: latest
+      window: 24h
+      filters: []
+    requiredDataClasses:
+      - cmdb_ci
+      - cmdb_relationships
+    type: ci_dependency_map
+    rootCiRef: CI-0002
+    depth: 2
+    showChangeMarkers: true
+  - id: db-health
+    title: DB / middleware health
+    query:
+      source: provider
+      dataClass: metrics
+      scope:
+        level: fleet
+      aggregation: pct_up
+      window: 24h
+      filters: []
+    requiredDataClasses:
+      - metrics
+    type: kpi_tile
+    format: number
+generatedBy: template

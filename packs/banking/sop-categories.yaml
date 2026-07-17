@@ -1,0 +1,23 @@
+# SOP categories — co-operative-bank operational-procedure types used to derive
+# a categorization HINT on ingested documents (W2_BRIEF §3 — a hint on the
+# document record, not a hard classification). Matching is keyword-based and
+# best-effort; an unmatched document simply gets no hint.
+categories:
+  - id: cbs_eod
+    label: "CBS End-of-Day"
+    match_keywords: ["eod", "end-of-day", "end of day", "day rollover", "batch", "cbs"]
+  - id: upi_reconciliation
+    label: "UPI / IMPS Reconciliation"
+    match_keywords: ["upi", "imps", "reconciliation", "recon", "settlement", "npci"]
+  - id: atm_cash_management
+    label: "ATM Cash Management"
+    match_keywords: ["atm", "cash-out", "cash out", "replenishment", "cash management", "cassette"]
+  - id: dr_failover
+    label: "DR / Failover"
+    match_keywords: ["dr", "disaster recovery", "failover", "rpo", "rto", "bcp"]
+  - id: rbi_reporting
+    label: "RBI / Regulatory Reporting"
+    match_keywords: ["rbi", "regulatory", "return", "adf", "reporting", "circular"]
+  - id: security_incident
+    label: "Security Incident"
+    match_keywords: ["security", "incident", "breach", "phishing", "fraud", "cyber"]

@@ -1,0 +1,22 @@
+ATM CASH-OUT SOP (SYNTHETIC FIXTURE — fabricated for W2 testing)
+
+1. PURPOSE
+   Procedure for responding to an ATM cash-out (cash-depletion) condition across
+   the synthetic branch ATM fleet. All details are fabricated.
+
+2. DETECTION
+   The ATM switch raises a low-cash or cash-out signal for a terminal. The
+   channels operations team receives the alert and verifies it.
+
+3. RESPONSE
+   3.1 Confirm the terminal cash balance from the switch.
+   3.2 Raise a cash-replenishment request to the cash-management vendor.
+   3.3 If the terminal serves a high-footfall branch, prioritise replenishment.
+
+4. ESCALATION
+   If multiple terminals in one region go cash-out simultaneously, escalate to
+   the duty manager as a potential cash-logistics incident.
+
+5. CLOSURE
+   Confirm replenishment, return the terminal to service, and record the event
+   in the operations log.

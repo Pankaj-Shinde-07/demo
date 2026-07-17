@@ -1,0 +1,35 @@
+{
+  "scenario": "scenario-2",
+  "name": "EOD batch overrun",
+  "synthetic": true,
+  "label": "SynthBank synthetic data",
+  "window": { "dayOffset": 2, "hours": 6 },
+  "correlation": {
+    "rawAlertCount": 3,
+    "incidents": 1,
+    "rootCiExternalId": "CI-0002",
+    "note": "CBS-DB saturation + downstream internet-banking timeouts are one incident"
+  },
+  "rootCause": {
+    "type": "recent_change",
+    "ciExternalId": "CI-0002",
+    "changeRef": "CHG-20260610-001",
+    "note": "RCA must surface the prior-evening config change first (smoking gun), timed before the incident"
+  },
+  "impact": {
+    "rootCiExternalId": "CI-0002",
+    "expectedServices": ["core_banking"],
+    "expectedCustomers": 450000,
+    "expectedBranches": 50,
+    "derivation": "traversal over §FROZEN spine — never hard-coded"
+  },
+  "recommendedAction": {
+    "mode": "propose",
+    "autoExecute": false,
+    "text": "Review/roll back CHG-20260610-001; relieve CBS-DB connection pressure before peak — human attests/executes."
+  },
+  "honestGaps": [
+    "the app-vs-infra boundary is not separable from this data (batch logic vs DB saturation)"
+  ],
+  "securityFeedGated": false
+}

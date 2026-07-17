@@ -1,0 +1,286 @@
+{
+  "_meta": {
+    "title": "W4 deferred gate — formal recall@10 eval (346-chunk SynthBank corpus)",
+    "date": "2026-06-08",
+    "tenant": "cfc5801f-db4e-454c-a14a-4732d9eac48a",
+    "corpus_chunks": 346,
+    "schema": "target_groups: list of groups; a group = list of acceptable [documentTitle, chunkIndex]; a group is SATISFIED if ANY member is in top-k. recall@k = satisfied_groups / total_groups (so duplicated CIs across the legacy 16-CI export and the 255-CI estate count as one group; multi-item list questions count each distinct item as a group). Honesty cases (class=honesty, negative=true) are evaluated separately and NOT folded into recall.",
+    "authoring_discipline": "targets chosen by inspecting stored chunk content (DB), NOT by running the retriever first."
+  },
+  "tenant_id": "cfc5801f-db4e-454c-a14a-4732d9eac48a",
+  "questions": [
+    {
+      "id": "cmdb-upi-cis", "class": "cmdb",
+      "q": "which configuration items support the upi_imps service",
+      "target_groups": [
+        [["synthbank-cmdb-export.xlsx", 3], ["cmdb-export.xlsx", 3]],
+        [["synthbank-cmdb-export.xlsx", 6], ["cmdb-export.xlsx", 6]],
+        [["synthbank-cmdb-export.xlsx", 4], ["cmdb-export.xlsx", 4]],
+        [["synthbank-cmdb-export.xlsx", 5], ["cmdb-export.xlsx", 5]],
+        [["synthbank-cmdb-export.xlsx", 22]]
+      ]
+    },
+    {
+      "id": "cmdb-corebanking-cis", "class": "cmdb",
+      "q": "what configuration items run core_banking",
+      "target_groups": [
+        [["synthbank-cmdb-export.xlsx", 0], ["cmdb-export.xlsx", 0]],
+        [["synthbank-cmdb-export.xlsx", 1], ["cmdb-export.xlsx", 1]],
+        [["synthbank-cmdb-export.xlsx", 16]],
+        [["synthbank-cmdb-export.xlsx", 17]]
+      ]
+    },
+    {
+      "id": "cmdb-atm-rely", "class": "cmdb",
+      "q": "what does atm_card_services rely on",
+      "target_groups": [
+        [["synthbank-cmdb-export.xlsx", 7], ["cmdb-export.xlsx", 7]],
+        [["synthbank-cmdb-export.xlsx", 8], ["cmdb-export.xlsx", 8]]
+      ]
+    },
+    {
+      "id": "cmdb-sponsor-dep", "class": "cmdb",
+      "q": "what depends on the sponsor bank link",
+      "target_groups": [
+        [["synthbank-cmdb-export.xlsx", 4], ["cmdb-export.xlsx", 4]],
+        [["synthbank-cmdb-export.xlsx", 9], ["cmdb-export.xlsx", 9]],
+        [["sponsor-bank-settlement-recon-sop.md", 2]]
+      ]
+    },
+    {
+      "id": "cmdb-dcdr", "class": "cmdb",
+      "q": "what is deployed in the DC-DR disaster recovery site",
+      "target_groups": [
+        [["synthbank-cmdb-export.xlsx", 13], ["cmdb-export.xlsx", 13]],
+        [["synthbank-branch-wan-topology.md", 3]]
+      ]
+    },
+    {
+      "id": "cmdb-hsm-list", "class": "cmdb",
+      "q": "list the HSM devices in the estate",
+      "target_groups": [
+        [["synthbank-cmdb-export.xlsx", 8], ["cmdb-export.xlsx", 8]],
+        [["synthbank-cmdb-export.xlsx", 22]]
+      ]
+    },
+    {
+      "id": "cmdb-upi-switch-tier", "class": "cmdb",
+      "q": "what criticality tier is UPI Switch 1",
+      "target_groups": [
+        [["synthbank-cmdb-export.xlsx", 3], ["cmdb-export.xlsx", 3]]
+      ]
+    },
+    {
+      "id": "cmdb-channels", "class": "cmdb",
+      "q": "which configuration items provide internet and mobile banking",
+      "target_groups": [
+        [["synthbank-cmdb-export.xlsx", 24]],
+        [["synthbank-cmdb-export.xlsx", 25]]
+      ]
+    },
+    {
+      "id": "cmdb-cts", "class": "cmdb",
+      "q": "which configuration item handles cheque clearing",
+      "target_groups": [
+        [["synthbank-cmdb-export.xlsx", 26]]
+      ]
+    },
+    {
+      "id": "cmdb-regrep", "class": "cmdb",
+      "q": "which configuration item does regulatory reporting",
+      "target_groups": [
+        [["synthbank-cmdb-export.xlsx", 15], ["cmdb-export.xlsx", 15]]
+      ]
+    },
+    {
+      "id": "cmdb-npci", "class": "cmdb",
+      "q": "what NPCI links exist in the estate",
+      "target_groups": [
+        [["synthbank-cmdb-export.xlsx", 5], ["cmdb-export.xlsx", 5]],
+        [["synthbank-cmdb-export.xlsx", 39]]
+      ]
+    },
+    {
+      "id": "cmdb-payment-gateway", "class": "cmdb",
+      "q": "where is the payment gateway and what service does it support",
+      "target_groups": [
+        [["synthbank-cmdb-export.xlsx", 6], ["cmdb-export.xlsx", 6]],
+        [["synthbank-cmdb-export.xlsx", 31]]
+      ]
+    },
+
+    {
+      "id": "pay-upi-settle", "class": "payments",
+      "q": "how does UPI settle through the sponsor bank",
+      "target_groups": [
+        [["sponsor-bank-settlement-recon-sop.md", 3], ["upi-imps-operational-runbook.md", 1]]
+      ]
+    },
+    {
+      "id": "pay-rtgs-cutoff", "class": "payments",
+      "q": "what are the RTGS cut-off times",
+      "target_groups": [
+        [["neft-rtgs-operations-sop-v2-current.md", 1]]
+      ]
+    },
+    {
+      "id": "pay-sponsor-drop", "class": "payments",
+      "q": "what breaks if the sponsor bank link drops",
+      "target_groups": [
+        [["sponsor-bank-settlement-recon-sop.md", 2], ["rca-1-sponsor-link-flap.md", 0]]
+      ]
+    },
+    {
+      "id": "pay-atm-auth", "class": "payments",
+      "q": "how are ATM card transactions authorized",
+      "target_groups": [
+        [["atm-switch-cash-replenishment-sop.md", 1]]
+      ]
+    },
+    {
+      "id": "pay-neft-outward", "class": "payments",
+      "q": "how does NEFT and RTGS outward processing and settlement work",
+      "target_groups": [
+        [["neft-rtgs-operations-sop-v2-current.md", 1], ["neft-rtgs-operations-sop-v2-current.md", 2]]
+      ]
+    },
+    {
+      "id": "pay-upi-decline", "class": "payments",
+      "q": "what causes UPI technical declines",
+      "target_groups": [
+        [["upi-imps-operational-runbook.md", 3]]
+      ]
+    },
+    {
+      "id": "pay-recon-break", "class": "payments",
+      "q": "how is a sponsor settlement reconciliation break handled",
+      "target_groups": [
+        [["sponsor-bank-settlement-recon-sop.md", 2]]
+      ]
+    },
+    {
+      "id": "pay-upi-limits", "class": "payments",
+      "q": "what are the UPI transaction limits and caps",
+      "target_groups": [
+        [["upi-imps-operational-runbook.md", 5]]
+      ]
+    },
+
+    {
+      "id": "rca-eod-change", "class": "rca",
+      "q": "what changed before the CBS EOD batch overrun",
+      "target_groups": [
+        [["rca-2-eod-batch-overrun.md", 0], ["rca-2-eod-batch-overrun.md", 3]]
+      ]
+    },
+    {
+      "id": "rca-upi-spike", "class": "rca",
+      "q": "what caused the UPI success-rate decline spike",
+      "target_groups": [
+        [["rca-4-upi-decline-spike.md", 0], ["rca-4-upi-decline-spike.md", 1]]
+      ]
+    },
+    {
+      "id": "rca-branchwan", "class": "rca",
+      "q": "what happened in the regional branch WAN hub outage",
+      "target_groups": [
+        [["rca-3-branch-wan-outage.md", 0], ["rca-3-branch-wan-outage.md", 2]]
+      ]
+    },
+    {
+      "id": "rca-sponsor-flap", "class": "rca",
+      "q": "what was the root cause of the sponsor-link flap incident",
+      "target_groups": [
+        [["rca-1-sponsor-link-flap.md", 0], ["rca-1-sponsor-link-flap.md", 2]]
+      ]
+    },
+    {
+      "id": "rca-ib-timeout", "class": "rca",
+      "q": "why did internet banking time out during the EOD batch",
+      "target_groups": [
+        [["rca-2-eod-batch-overrun.md", 0], ["rca-2-eod-batch-overrun.md", 1]]
+      ]
+    },
+    {
+      "id": "rca-upi-corrective", "class": "rca",
+      "q": "what are the corrective actions for the UPI HSM decline incident",
+      "target_groups": [
+        [["rca-4-upi-decline-spike.md", 2]]
+      ]
+    },
+    {
+      "id": "rca-recent-change", "class": "rca",
+      "q": "why does weighting recent changes matter in root-cause analysis",
+      "target_groups": [
+        [["rca-2-eod-batch-overrun.md", 3]]
+      ]
+    },
+
+    {
+      "id": "topo-hub23", "class": "topology",
+      "q": "which hub serves branch 23",
+      "target_groups": [
+        [["synthbank-branch-wan-topology.md", 1]]
+      ]
+    },
+    {
+      "id": "topo-network", "class": "topology",
+      "q": "what is our branch network topology",
+      "target_groups": [
+        [["synthbank-branch-wan-topology.md", 0], ["synthbank-branch-wan-topology.md", 1]]
+      ]
+    },
+    {
+      "id": "topo-reach-dc", "class": "topology",
+      "q": "how do branches reach the data centre",
+      "target_groups": [
+        [["synthbank-branch-wan-topology.md", 4], ["synthbank-branch-wan-topology.md", 2]]
+      ]
+    },
+
+    {
+      "id": "hon-atm-dr", "class": "honesty", "negative": true,
+      "q": "what is the DR failover plan for atm_card_services",
+      "honest_evidence": [
+        [["atm-switch-cash-replenishment-sop.md", 2]],
+        [["synthbank-branch-wan-topology.md", 3]],
+        [["synthbank-cmdb-export.xlsx", 7], ["cmdb-export.xlsx", 7]]
+      ],
+      "no_confabulation_possible": true,
+      "note": "E1 deliberate gap: no atm_switch/card-HSM DR node and no documented ATM DR procedure anywhere in the corpus. Honest outcome = 'no DR documented'. Pass = honest-gap evidence surfaces AND no chunk fabricates an ATM DR procedure (none exists by construction)."
+    },
+    {
+      "id": "hon-recon-upstream", "class": "honesty", "negative": true,
+      "q": "what business service is upstream of Reconciliation Server 1",
+      "honest_evidence": [
+        [["synthbank-cmdb-export.xlsx", 251]],
+        [["sponsor-bank-settlement-recon-sop.md", 1]]
+      ],
+      "no_confabulation_possible": true,
+      "note": "E2 orphan: Reconciliation Server 1 has blank business_service. Honest outcome = 'unknown upstream'. Pass = the orphan's own row (showing the blank) surfaces, grounding an honest 'no mapped service'."
+    },
+    {
+      "id": "hon-tier1-switch", "class": "honesty", "negative": true,
+      "q": "which switches are tier-1",
+      "honest_evidence": [
+        [["synthbank-cmdb-export.xlsx", 18], ["synthbank-cmdb-export.xlsx", 19], ["synthbank-cmdb-export.xlsx", 41], ["synthbank-cmdb-export.xlsx", 45]]
+      ],
+      "no_confabulation_possible": true,
+      "note": "No switch in the estate is tier-1 (core/hub switches tier_2, branch switches tier_3/unknown). Honest outcome = 'none'. Pass = ANY switch row surfaces showing its actual (non tier-1) tier, grounding the correct 'none' answer, and no chunk claims a tier-1 switch. (Evidence group lists representative core/hub switch rows; the originally-narrow single-row pick was a target-authoring artifact — corrected 2026-06-08, gate-independent.)"
+    },
+    {
+      "id": "hon-nonexistent-svc", "class": "honesty", "negative": true,
+      "q": "how does our forex treasury dealing platform connect to NPCI",
+      "honest_evidence": [],
+      "no_confabulation_possible": true,
+      "note": "SynthBank has no forex/treasury-dealing service in the corpus. Honest outcome = 'no such service'. Pass = no chunk falsely presents itself as documenting a forex dealing platform (retriever returns only tangential NPCI/payments chunks at low confidence)."
+    },
+    {
+      "id": "hon-nonexistent-rca", "class": "honesty", "negative": true,
+      "q": "what was the root cause of the database corruption incident",
+      "honest_evidence": [],
+      "no_confabulation_possible": true,
+      "note": "No database-corruption RCA exists (the four RCAs are sponsor-link flap, EOD batch overrun, branch-WAN outage, UPI decline spike). Honest outcome = 'no such incident'. Pass = no chunk fabricates a DB-corruption RCA (the closest, RCA-2, is an EOD overrun, not corruption)."
+    }
+  ]
+}

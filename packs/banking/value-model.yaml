@@ -1,0 +1,47 @@
+# W6 Phase 2 (CP6.5) — banking pack value-model (ADR-005, §6.6 portability seam).
+#
+# These are the figures that are GENUINELY assumptions in any deployment — the
+# engine carries none of them as literals. Customer/branch COUNTS do NOT live
+# here: they are frozen spine data (Class-1 measured) per W6-phase2-brief §FROZEN.
+#
+# Every placeholder carries a [ucb-verify] tag: the real-world figure a specific
+# Urban Co-operative Bank deployment should measure and substitute before these
+# numbers are presented as anything other than an explicit assumption.
+
+value_at_risk:
+  # Class-2 (derived-with-assumptions): the MEASURED service.revenue_impact_hourly
+  # (in the CMDB schema) multiplied by an ESTIMATED outage duration. The hourly
+  # rate is measured; the duration is the assumption — so the product is Class-2.
+  estimated_outage_hours:
+    value: 1.0
+    verify: "[ucb-verify] replace with this deployment's measured MTTR for tier-1 rails"
+  basis: "Class-2 derived: service.revenue_impact_hourly (measured) × estimated_outage_hours (assumed)"
+
+retention:
+  # Class-3 (assumption-only): customer churn following a sustained outage. There
+  # is no measured basis in the spine — this is NEVER asserted as fact, only
+  # surfaced labelled as an assumption when explicitly asked.
+  monthly_churn_rate_pct:
+    value: 0.5
+    verify: "[ucb-verify] no measured basis exists; do not assert as fact, label Class-3"
+  note: "assumption-only; presented labelled as Class-3 or withheld; never grounded as measured"
+
+# W9 (CP9.3) — ROI / Value-Realized coefficients. The genuine ASSUMPTIONS the
+# value-realized derivation applies on top of the §FROZEN measured baseline +
+# the W8-measured compression. Class-2 (derived) where multiplied with measured
+# inputs; penalties/retention stay Class-3 (assumption-only). All [ucb-verify].
+roi:
+  # Share of NOC incident-effort that is triage/correlation (the part alert→
+  # incident compression directly reduces). Applied to measured compression.
+  triage_share_pct:
+    value: 55
+    verify: "[ucb-verify] measure the triage/correlation share of NOC incident effort on site"
+  # Fraction of MTTR removed by grounded RCA + recent-change surfacing.
+  mttr_reduction_pct:
+    value: 35
+    verify: "[ucb-verify] measure the realised MTTR reduction post-deployment"
+  # Class-3 assumption-only: regulatory penalty exposure averted per month.
+  monthly_penalty_estimate_inr:
+    value: 200000
+    verify: "[ucb-verify] no measured basis; assumption-only, label Class-3, never assert"
+  note: "Class-2 where applied to measured baseline/compression; penalties Class-3 assumption-only"

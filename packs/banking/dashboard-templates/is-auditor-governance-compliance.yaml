@@ -1,0 +1,92 @@
+schemaVersion: 1
+key: is-auditor-governance-compliance
+title: IT Governance & Compliance Dashboard
+persona: is_auditor
+layout:
+  grid:
+    cols: 12
+  items:
+    - widgetId: compliance
+      x: 0
+      'y': 0
+      w: 4
+      h: 4
+    - widgetId: findings
+      x: 4
+      'y': 0
+      w: 4
+      h: 4
+    - widgetId: violations
+      x: 8
+      'y': 0
+      w: 4
+      h: 4
+    - widgetId: risk-mx
+      x: 0
+      'y': 4
+      w: 4
+      h: 4
+widgets:
+  - id: compliance
+    title: RBI compliance posture
+    query:
+      source: provider
+      dataClass: compliance_controls
+      scope:
+        level: tenant
+      aggregation: latest
+      window: 24h
+      filters: []
+    requiredDataClasses:
+      - compliance_controls
+      - patch_status
+    type: compliance_scorecard
+    framework: rbi
+  - id: findings
+    title: Open audit findings
+    query:
+      source: provider
+      dataClass: compliance_controls
+      scope:
+        level: tenant
+      aggregation: latest
+      window: 24h
+      filters: []
+    requiredDataClasses:
+      - compliance_controls
+    type: kpi_tile
+    format: number
+  - id: violations
+    title: Access / policy violations
+    query:
+      source: provider
+      dataClass: compliance_controls
+      scope:
+        level: tenant
+      aggregation: latest
+      window: 24h
+      filters: []
+    requiredDataClasses:
+      - compliance_controls
+    type: top_n_table
+    columns:
+      - control
+      - severity
+    'n': 10
+    sortDir: desc
+  - id: risk-mx
+    title: Risk matrix
+    query:
+      source: provider
+      dataClass: vulnerabilities
+      scope:
+        level: tenant
+      aggregation: latest
+      window: 24h
+      filters: []
+    requiredDataClasses:
+      - vulnerabilities
+    type: risk_matrix
+    impactLevels: 5
+    likelihoodLevels: 5
+generatedBy: template

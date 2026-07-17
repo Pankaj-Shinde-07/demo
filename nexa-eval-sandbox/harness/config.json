@@ -1,0 +1,7 @@
+{
+  "endpoint": "http://127.0.0.1:3110/api/v1/ai/chat",
+  "headers": {},
+  "prompt_set": "prompts/prompt_set.jsonl",
+  "history": "harness/last-scorecard.json",
+  "_note": "Pointed at the REAL NEXA Copilot (POST /api/v1/ai/chat on port 3110) — this is the target-number configuration. The request/response mapping to the flat scorecard contract lives in scorecard.mjs -> ask(); see API-CONTRACT.md section 'Real Copilot'. Day-one mock fallback: set endpoint to http://127.0.0.1:8899/copilot/ask — the same ask() adapter also drives the mock (it sends both question+message and reads refs from citations|refs)."
+}

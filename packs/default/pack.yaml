@@ -1,0 +1,8 @@
+industry: default
+version: "0.1.0"
+name: "Default Pack"
+description: |
+  Empty default pack — structure only, no industry-specific content.
+  Used when tenant.industry is set to 'default' or as a fallback when an
+  industry pack is unavailable. Industry-specific packs (banking, aviation,
+  telecom, etc.) ship in W7+ and follow this same structural contract.

@@ -1,0 +1,1253 @@
+{
+  "summary": {
+    "dense": {
+      "overall": {
+        "recall@1": 0.75,
+        "recall@3": 0.9,
+        "recall@5": 0.925,
+        "recall@10": 0.95,
+        "mrr": 0.925,
+        "n": 20
+      },
+      "cmdb": {
+        "recall@1": 0.6153846153846154,
+        "recall@3": 0.8461538461538461,
+        "recall@5": 0.8846153846153846,
+        "recall@10": 0.9230769230769231,
+        "mrr": 0.8846153846153846,
+        "n": 13
+      },
+      "knowledge": {
+        "recall@1": 1.0,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "mrr": 1.0,
+        "n": 7
+      }
+    },
+    "sparse": {
+      "overall": {
+        "recall@1": 0.35,
+        "recall@3": 0.35,
+        "recall@5": 0.35,
+        "recall@10": 0.35,
+        "mrr": 0.35,
+        "n": 20
+      },
+      "cmdb": {
+        "recall@1": 0.38461538461538464,
+        "recall@3": 0.38461538461538464,
+        "recall@5": 0.38461538461538464,
+        "recall@10": 0.38461538461538464,
+        "mrr": 0.38461538461538464,
+        "n": 13
+      },
+      "knowledge": {
+        "recall@1": 0.2857142857142857,
+        "recall@3": 0.2857142857142857,
+        "recall@5": 0.2857142857142857,
+        "recall@10": 0.2857142857142857,
+        "mrr": 0.2857142857142857,
+        "n": 7
+      }
+    },
+    "hybrid": {
+      "overall": {
+        "recall@1": 0.8,
+        "recall@3": 0.95,
+        "recall@5": 0.975,
+        "recall@10": 1.0,
+        "mrr": 0.975,
+        "n": 20
+      },
+      "cmdb": {
+        "recall@1": 0.6923076923076923,
+        "recall@3": 0.9230769230769231,
+        "recall@5": 0.9615384615384616,
+        "recall@10": 1.0,
+        "mrr": 0.9615384615384616,
+        "n": 13
+      },
+      "knowledge": {
+        "recall@1": 1.0,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "mrr": 1.0,
+        "n": 7
+      }
+    }
+  },
+  "per": {
+    "dense": {
+      "cmdb-bs-upi": {
+        "recall": {
+          "1": 0.25,
+          "3": 0.75,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "found_top3": [
+          [
+            "cmdb-export.xlsx",
+            3
+          ],
+          [
+            "cmdb-export.xlsx",
+            6
+          ],
+          [
+            "cmdb-export.xlsx",
+            5
+          ]
+        ]
+      },
+      "cmdb-bs-core": {
+        "recall": {
+          "1": 0.0,
+          "3": 0.5,
+          "5": 0.5,
+          "10": 1.0
+        },
+        "rr": 0.5,
+        "found_top3": [
+          [
+            "cmdb-export.xlsx",
+            10
+          ],
+          [
+            "cmdb-export.xlsx",
+            0
+          ],
+          [
+            "cmdb-export.xlsx",
+            1
+          ]
+        ]
+      },
+      "cmdb-bs-atm": {
+        "recall": {
+          "1": 0.5,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "found_top3": [
+          [
+            "cmdb-export.xlsx",
+            7
+          ],
+          [
+            "cmdb-export.xlsx",
+            8
+          ],
+          [
+            "cmdb-export.xlsx",
+            3
+          ]
+        ]
+      },
+      "cmdb-bs-neft": {
+        "recall": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "found_top3": [
+          [
+            "cmdb-export.xlsx",
+            9
+          ],
+          [
+            "cbs-eod-runbook.docx",
+            0
+          ],
+          [
+            "cmdb-export.xlsx",
+            3
+          ]
+        ]
+      },
+      "cmdb-bs-regrep": {
+        "recall": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "found_top3": [
+          [
+            "cmdb-export.xlsx",
+            15
+          ],
+          [
+            "cmdb-export.xlsx",
+            2
+          ],
+          [
+            "cmdb-export.xlsx",
+            0
+          ]
+        ]
+      },
+      "cmdb-ct-hsm": {
+        "recall": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "found_top3": [
+          [
+            "cmdb-export.xlsx",
+            8
+          ],
+          [
+            "cmdb-export.xlsx",
+            2
+          ],
+          [
+            "cmdb-export.xlsx",
+            13
+          ]
+        ]
+      },
+      "cmdb-ct-npci": {
+        "recall": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "found_top3": [
+          [
+            "cmdb-export.xlsx",
+            5
+          ],
+          [
+            "cmdb-export.xlsx",
+            4
+          ],
+          [
+            "cmdb-export.xlsx",
+            9
+          ]
+        ]
+      },
+      "cmdb-ct-pgw": {
+        "recall": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "found_top3": [
+          [
+            "cmdb-export.xlsx",
+            6
+          ],
+          [
+            "cmdb-export.xlsx",
+            5
+          ],
+          [
+            "cmdb-export.xlsx",
+            3
+          ]
+        ]
+      },
+      "cmdb-ct-fw": {
+        "recall": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "found_top3": [
+          [
+            "cmdb-export.xlsx",
+            12
+          ],
+          [
+            "cmdb-export.xlsx",
+            10
+          ],
+          [
+            "cmdb-export.xlsx",
+            5
+          ]
+        ]
+      },
+      "cmdb-ct-spon": {
+        "recall": {
+          "1": 0.5,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "found_top3": [
+          [
+            "cmdb-export.xlsx",
+            9
+          ],
+          [
+            "cmdb-export.xlsx",
+            4
+          ],
+          [
+            "cmdb-export.xlsx",
+            5
+          ]
+        ]
+      },
+      "cmdb-tier3": {
+        "recall": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "rr": 0.0,
+        "found_top3": [
+          [
+            "cmdb-export.xlsx",
+            5
+          ],
+          [
+            "cmdb-export.xlsx",
+            4
+          ],
+          [
+            "cmdb-export.xlsx",
+            2
+          ]
+        ]
+      },
+      "cmdb-tier2": {
+        "recall": {
+          "1": 0.25,
+          "3": 0.75,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "found_top3": [
+          [
+            "cmdb-export.xlsx",
+            11
+          ],
+          [
+            "cmdb-export.xlsx",
+            10
+          ],
+          [
+            "cmdb-export.xlsx",
+            12
+          ]
+        ]
+      },
+      "cmdb-loc-dr": {
+        "recall": {
+          "1": 0.5,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "found_top3": [
+          [
+            "cmdb-export.xlsx",
+            13
+          ],
+          [
+            "cmdb-export.xlsx",
+            9
+          ],
+          [
+            "cmdb-export.xlsx",
+            3
+          ]
+        ]
+      },
+      "kb-eod-rollback": {
+        "recall": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "found_top3": [
+          [
+            "cbs-eod-runbook.docx",
+            0
+          ],
+          [
+            "upi-recon-sop.md",
+            0
+          ],
+          [
+            "cmdb-export.xlsx",
+            14
+          ]
+        ]
+      },
+      "kb-eod-precheck": {
+        "recall": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "found_top3": [
+          [
+            "cbs-eod-runbook.docx",
+            0
+          ],
+          [
+            "cmdb-export.xlsx",
+            0
+          ],
+          [
+            "cmdb-export.xlsx",
+            10
+          ]
+        ]
+      },
+      "kb-eod-channels": {
+        "recall": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "found_top3": [
+          [
+            "cbs-eod-runbook.docx",
+            0
+          ],
+          [
+            "cmdb-export.xlsx",
+            7
+          ],
+          [
+            "cmdb-export.xlsx",
+            6
+          ]
+        ]
+      },
+      "kb-eod-rollover": {
+        "recall": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "found_top3": [
+          [
+            "cbs-eod-runbook.docx",
+            0
+          ],
+          [
+            "upi-recon-sop.md",
+            0
+          ],
+          [
+            "cmdb-export.xlsx",
+            7
+          ]
+        ]
+      },
+      "kb-recon-how": {
+        "recall": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "found_top3": [
+          [
+            "upi-recon-sop.md",
+            0
+          ],
+          [
+            "cmdb-export.xlsx",
+            5
+          ],
+          [
+            "cmdb-export.xlsx",
+            3
+          ]
+        ]
+      },
+      "kb-recon-inputs": {
+        "recall": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "found_top3": [
+          [
+            "upi-recon-sop.md",
+            0
+          ],
+          [
+            "cmdb-export.xlsx",
+            3
+          ],
+          [
+            "cmdb-export.xlsx",
+            5
+          ]
+        ]
+      },
+      "kb-recon-exc": {
+        "recall": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "found_top3": [
+          [
+            "upi-recon-sop.md",
+            0
+          ],
+          [
+            "cmdb-export.xlsx",
+            3
+          ],
+          [
+            "cmdb-export.xlsx",
+            6
+          ]
+        ]
+      }
+    },
+    "sparse": {
+      "cmdb-bs-upi": {
+        "recall": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "rr": 0.0,
+        "found_top3": []
+      },
+      "cmdb-bs-core": {
+        "recall": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "rr": 0.0,
+        "found_top3": []
+      },
+      "cmdb-bs-atm": {
+        "recall": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "rr": 0.0,
+        "found_top3": []
+      },
+      "cmdb-bs-neft": {
+        "recall": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "rr": 0.0,
+        "found_top3": []
+      },
+      "cmdb-bs-regrep": {
+        "recall": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "rr": 0.0,
+        "found_top3": []
+      },
+      "cmdb-ct-hsm": {
+        "recall": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "found_top3": [
+          [
+            "cmdb-export.xlsx",
+            8
+          ]
+        ]
+      },
+      "cmdb-ct-npci": {
+        "recall": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "found_top3": [
+          [
+            "cmdb-export.xlsx",
+            5
+          ]
+        ]
+      },
+      "cmdb-ct-pgw": {
+        "recall": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "found_top3": [
+          [
+            "cmdb-export.xlsx",
+            6
+          ]
+        ]
+      },
+      "cmdb-ct-fw": {
+        "recall": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "found_top3": [
+          [
+            "cmdb-export.xlsx",
+            12
+          ]
+        ]
+      },
+      "cmdb-ct-spon": {
+        "recall": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "rr": 0.0,
+        "found_top3": []
+      },
+      "cmdb-tier3": {
+        "recall": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "found_top3": [
+          [
+            "cmdb-export.xlsx",
+            14
+          ]
+        ]
+      },
+      "cmdb-tier2": {
+        "recall": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "rr": 0.0,
+        "found_top3": []
+      },
+      "cmdb-loc-dr": {
+        "recall": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "rr": 0.0,
+        "found_top3": []
+      },
+      "kb-eod-rollback": {
+        "recall": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "rr": 0.0,
+        "found_top3": []
+      },
+      "kb-eod-precheck": {
+        "recall": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "rr": 0.0,
+        "found_top3": []
+      },
+      "kb-eod-channels": {
+        "recall": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "found_top3": [
+          [
+            "cbs-eod-runbook.docx",
+            0
+          ]
+        ]
+      },
+      "kb-eod-rollover": {
+        "recall": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "found_top3": [
+          [
+            "cbs-eod-runbook.docx",
+            0
+          ]
+        ]
+      },
+      "kb-recon-how": {
+        "recall": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "rr": 0.0,
+        "found_top3": []
+      },
+      "kb-recon-inputs": {
+        "recall": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "rr": 0.0,
+        "found_top3": []
+      },
+      "kb-recon-exc": {
+        "recall": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "rr": 0.0,
+        "found_top3": []
+      }
+    },
+    "hybrid": {
+      "cmdb-bs-upi": {
+        "recall": {
+          "1": 0.25,
+          "3": 0.75,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "found_top3": [
+          [
+            "cmdb-export.xlsx",
+            3
+          ],
+          [
+            "cmdb-export.xlsx",
+            6
+          ],
+          [
+            "cmdb-export.xlsx",
+            5
+          ]
+        ]
+      },
+      "cmdb-bs-core": {
+        "recall": {
+          "1": 0.0,
+          "3": 0.5,
+          "5": 0.5,
+          "10": 1.0
+        },
+        "rr": 0.5,
+        "found_top3": [
+          [
+            "cmdb-export.xlsx",
+            10
+          ],
+          [
+            "cmdb-export.xlsx",
+            0
+          ],
+          [
+            "cmdb-export.xlsx",
+            1
+          ]
+        ]
+      },
+      "cmdb-bs-atm": {
+        "recall": {
+          "1": 0.5,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "found_top3": [
+          [
+            "cmdb-export.xlsx",
+            7
+          ],
+          [
+            "cmdb-export.xlsx",
+            8
+          ],
+          [
+            "cmdb-export.xlsx",
+            3
+          ]
+        ]
+      },
+      "cmdb-bs-neft": {
+        "recall": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "found_top3": [
+          [
+            "cmdb-export.xlsx",
+            9
+          ],
+          [
+            "cbs-eod-runbook.docx",
+            0
+          ],
+          [
+            "cmdb-export.xlsx",
+            3
+          ]
+        ]
+      },
+      "cmdb-bs-regrep": {
+        "recall": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "found_top3": [
+          [
+            "cmdb-export.xlsx",
+            15
+          ],
+          [
+            "cmdb-export.xlsx",
+            2
+          ],
+          [
+            "cmdb-export.xlsx",
+            0
+          ]
+        ]
+      },
+      "cmdb-ct-hsm": {
+        "recall": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "found_top3": [
+          [
+            "cmdb-export.xlsx",
+            8
+          ],
+          [
+            "cmdb-export.xlsx",
+            2
+          ],
+          [
+            "cmdb-export.xlsx",
+            13
+          ]
+        ]
+      },
+      "cmdb-ct-npci": {
+        "recall": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "found_top3": [
+          [
+            "cmdb-export.xlsx",
+            5
+          ],
+          [
+            "cmdb-export.xlsx",
+            4
+          ],
+          [
+            "cmdb-export.xlsx",
+            9
+          ]
+        ]
+      },
+      "cmdb-ct-pgw": {
+        "recall": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "found_top3": [
+          [
+            "cmdb-export.xlsx",
+            6
+          ],
+          [
+            "cmdb-export.xlsx",
+            5
+          ],
+          [
+            "cmdb-export.xlsx",
+            3
+          ]
+        ]
+      },
+      "cmdb-ct-fw": {
+        "recall": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "found_top3": [
+          [
+            "cmdb-export.xlsx",
+            12
+          ],
+          [
+            "cmdb-export.xlsx",
+            10
+          ],
+          [
+            "cmdb-export.xlsx",
+            5
+          ]
+        ]
+      },
+      "cmdb-ct-spon": {
+        "recall": {
+          "1": 0.5,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "found_top3": [
+          [
+            "cmdb-export.xlsx",
+            9
+          ],
+          [
+            "cmdb-export.xlsx",
+            4
+          ],
+          [
+            "cmdb-export.xlsx",
+            5
+          ]
+        ]
+      },
+      "cmdb-tier3": {
+        "recall": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "found_top3": [
+          [
+            "cmdb-export.xlsx",
+            14
+          ],
+          [
+            "cmdb-export.xlsx",
+            5
+          ],
+          [
+            "cmdb-export.xlsx",
+            4
+          ]
+        ]
+      },
+      "cmdb-tier2": {
+        "recall": {
+          "1": 0.25,
+          "3": 0.75,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "found_top3": [
+          [
+            "cmdb-export.xlsx",
+            11
+          ],
+          [
+            "cmdb-export.xlsx",
+            10
+          ],
+          [
+            "cmdb-export.xlsx",
+            12
+          ]
+        ]
+      },
+      "cmdb-loc-dr": {
+        "recall": {
+          "1": 0.5,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "found_top3": [
+          [
+            "cmdb-export.xlsx",
+            13
+          ],
+          [
+            "cmdb-export.xlsx",
+            9
+          ],
+          [
+            "cmdb-export.xlsx",
+            3
+          ]
+        ]
+      },
+      "kb-eod-rollback": {
+        "recall": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "found_top3": [
+          [
+            "cbs-eod-runbook.docx",
+            0
+          ],
+          [
+            "upi-recon-sop.md",
+            0
+          ],
+          [
+            "cmdb-export.xlsx",
+            14
+          ]
+        ]
+      },
+      "kb-eod-precheck": {
+        "recall": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "found_top3": [
+          [
+            "cbs-eod-runbook.docx",
+            0
+          ],
+          [
+            "cmdb-export.xlsx",
+            0
+          ],
+          [
+            "cmdb-export.xlsx",
+            10
+          ]
+        ]
+      },
+      "kb-eod-channels": {
+        "recall": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "found_top3": [
+          [
+            "cbs-eod-runbook.docx",
+            0
+          ],
+          [
+            "cmdb-export.xlsx",
+            7
+          ],
+          [
+            "cmdb-export.xlsx",
+            6
+          ]
+        ]
+      },
+      "kb-eod-rollover": {
+        "recall": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "found_top3": [
+          [
+            "cbs-eod-runbook.docx",
+            0
+          ],
+          [
+            "upi-recon-sop.md",
+            0
+          ],
+          [
+            "cmdb-export.xlsx",
+            7
+          ]
+        ]
+      },
+      "kb-recon-how": {
+        "recall": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "found_top3": [
+          [
+            "upi-recon-sop.md",
+            0
+          ],
+          [
+            "cmdb-export.xlsx",
+            5
+          ],
+          [
+            "cmdb-export.xlsx",
+            3
+          ]
+        ]
+      },
+      "kb-recon-inputs": {
+        "recall": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "found_top3": [
+          [
+            "upi-recon-sop.md",
+            0
+          ],
+          [
+            "cmdb-export.xlsx",
+            3
+          ],
+          [
+            "cmdb-export.xlsx",
+            5
+          ]
+        ]
+      },
+      "kb-recon-exc": {
+        "recall": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "found_top3": [
+          [
+            "upi-recon-sop.md",
+            0
+          ],
+          [
+            "cmdb-export.xlsx",
+            3
+          ],
+          [
+            "cmdb-export.xlsx",
+            6
+          ]
+        ]
+      }
+    }
+  },
+  "thesis": {
+    "recall@3": true,
+    "mrr": true
+  },
+  "prefix_regression": {
+    "ok": true,
+    "detail": "cos(query_embed(text), stored_passage)=0.9832 (must be < 0.99; ~1.0 would mean prefix dropped)"
+  }
+}

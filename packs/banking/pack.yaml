@@ -1,0 +1,9 @@
+industry: banking
+version: "0.1.0"
+name: "Banking Pack (Urban Co-operative Banks)"
+description: |
+  First-cut industry pack for medium Indian Urban Co-operative Banks (UCBs) —
+  the co-op-bank beachhead per ADR-003. W2 seeds the SOP categories and CMDB
+  mappings used by knowledge ingestion; richer pack content (prompt fragments,
+  dashboard templates, severity rules) is grown in later workstreams. All
+  vertical content lives here, never in pipeline/engine code.

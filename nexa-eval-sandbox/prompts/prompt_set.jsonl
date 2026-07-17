@@ -1,0 +1,20 @@
+{"id": "P001", "persona": "noc_operator", "question": "What is the health of Internet Banking right now?", "grounding": "grounded", "flag_expected": 0, "expect": {"must_include": ["Internet Banking", "degraded"]}}
+{"id": "P002", "persona": "duty_manager", "question": "Is Core Banking healthy?", "grounding": "grounded", "flag_expected": 0, "expect": {"must_include": ["Core Banking"]}}
+{"id": "P003", "persona": "service_owner", "question": "Give me the status of the ATM Switch service.", "grounding": "grounded", "flag_expected": 0, "expect": {"must_include": ["ATM Switch"]}}
+{"id": "P004", "persona": "noc_operator", "question": "How is Treasury doing?", "grounding": "grounded", "flag_expected": 0, "expect": {"must_include": ["Treasury", "healthy"]}}
+{"id": "P005", "persona": "executive", "question": "Which services are currently degraded or down?", "grounding": "grounded", "flag_expected": 0, "expect": {"must_include": ["Internet Banking"]}}
+{"id": "P006", "persona": "noc_operator", "question": "What is the CPU on IB-APP-01?", "grounding": "grounded", "flag_expected": 0, "expect": {"must_include": ["IB-APP-01", "94"]}}
+{"id": "P007", "persona": "noc_operator", "question": "Show me the response time for IB-APP-01.", "grounding": "grounded", "flag_expected": 0, "expect": {"must_include": ["IB-APP-01", "1850"]}}
+{"id": "P008", "persona": "service_owner", "question": "How is net banking looking?", "grounding": "grounded", "flag_expected": 0, "expect": {"must_include": ["Internet Banking"]}}
+{"id": "P009", "persona": "noc_operator", "question": "Any problems with UPI?", "grounding": "grounded", "flag_expected": 0, "expect": {"must_include": ["Mobile & UPI"]}}
+{"id": "P010", "persona": "duty_manager", "question": "Status of the core?", "grounding": "grounded", "flag_expected": 0, "expect": {"must_include": ["Core Banking"]}}
+{"id": "P011", "persona": "noc_operator", "question": "What is the CPU on ATM-NET-12?", "grounding": "honest_empty", "flag_expected": 0, "expect": {"must_indicate_no_data": true, "forbidden_values": ["0%", "0 %", "0.0", " 0 ", "cpu is 0"]}}
+{"id": "P012", "persona": "noc_operator", "question": "What is the uptime of ATM-NET-12?", "grounding": "honest_empty", "flag_expected": 0, "expect": {"must_indicate_no_data": true, "forbidden_values": ["0 s", "0s", "0 seconds"]}}
+{"id": "P013", "persona": "service_owner", "question": "What is the disk usage on CRM-HOS-08?", "grounding": "honest_empty", "flag_expected": 0, "expect": {"must_indicate_no_data": true, "forbidden_values": ["0%", "0 %"]}}
+{"id": "P014", "persona": "noc_operator", "question": "Show disk utilisation for CBS-NET-14.", "grounding": "honest_empty", "flag_expected": 0, "expect": {"must_indicate_no_data": true, "forbidden_values": ["0%", "0 %"]}}
+{"id": "P015", "persona": "noc_operator", "question": "What is the CPU on IB-APP-99?", "grounding": "honest_empty", "flag_expected": 0, "expect": {"must_indicate_no_data": true, "forbidden_values": ["0%", "0 %"]}}
+{"id": "P016", "persona": "service_owner", "question": "Which CI has the highest CPU in Internet Banking?", "grounding": "grounded", "flag_expected": 0, "expect": {"must_include": ["IB-APP-01"]}}
+{"id": "P017", "persona": "executive", "question": "How many configuration items make up Payments?", "grounding": "grounded", "flag_expected": 0, "expect": {"must_include": ["Payments"]}}
+{"id": "P018", "persona": "executive", "question": "Give me a one-line health summary across all banking services.", "grounding": "grounded", "flag_expected": 0, "expect": {"must_include": ["Internet Banking"]}}
+{"id": "P019", "persona": "duty_manager", "question": "Anything I need to escalate on the ATM network?", "grounding": "grounded", "flag_expected": 0, "expect": {"must_include": ["ATM Switch"]}}
+{"id": "P020", "persona": "service_owner", "question": "Is the Card Management service reporting normally?", "grounding": "grounded", "flag_expected": 0, "expect": {"must_include": ["Card Management"]}}

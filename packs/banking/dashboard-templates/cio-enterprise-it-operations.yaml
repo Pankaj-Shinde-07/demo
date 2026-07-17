@@ -1,0 +1,146 @@
+schemaVersion: 1
+key: cio-enterprise-it-operations
+title: Enterprise IT Operations Dashboard
+persona: cio
+layout:
+  grid:
+    cols: 12
+  items:
+    - widgetId: narrative
+      x: 0
+      'y': 0
+      w: 12
+      h: 3
+    - widgetId: infra
+      x: 0
+      'y': 4
+      w: 4
+      h: 4
+    - widgetId: svc-health
+      x: 4
+      'y': 4
+      w: 4
+      h: 4
+    - widgetId: inc-trend
+      x: 8
+      'y': 4
+      w: 4
+      h: 4
+    - widgetId: capacity
+      x: 0
+      'y': 8
+      w: 4
+      h: 4
+    - widgetId: top-ci
+      x: 4
+      'y': 8
+      w: 4
+      h: 4
+    - widgetId: rca-dist
+      x: 8
+      'y': 8
+      w: 4
+      h: 4
+widgets:
+  - id: narrative
+    title: AI insight
+    requiredDataClasses: []
+    type: ai_narrative
+    scope: tenant
+    maxWords: 220
+  - id: infra
+    title: Infrastructure health
+    query:
+      source: provider
+      dataClass: metrics
+      scope:
+        level: fleet
+      aggregation: pct_up
+      window: 24h
+      filters: []
+    requiredDataClasses:
+      - metrics
+    type: kpi_tile
+    unit: percent
+    format: percent
+  - id: svc-health
+    title: Service health map
+    query:
+      source: provider
+      dataClass: business_services
+      scope:
+        level: tenant
+      aggregation: latest
+      window: 24h
+      filters: []
+    requiredDataClasses:
+      - business_services
+      - asset_status
+    type: service_health_map
+    groupBy: tier
+  - id: inc-trend
+    title: Saturation trend
+    query:
+      source: provider
+      dataClass: metrics
+      scope:
+        level: fleet
+      aggregation: avg
+      window: all
+      filters: []
+    requiredDataClasses:
+      - metrics
+    type: trend_chart
+    metric: cpu_saturation_pct
+    window: 7d
+    aggregation: avg
+  - id: capacity
+    title: Capacity forecast
+    query:
+      source: provider
+      dataClass: metrics
+      scope:
+        level: fleet
+      aggregation: avg
+      window: all
+      filters: []
+    requiredDataClasses:
+      - metrics
+    type: capacity_forecast
+    metric: cpu_saturation_pct
+    horizon: 30d
+  - id: top-ci
+    title: Top problem CIs
+    query:
+      source: provider
+      dataClass: cmdb_ci
+      scope:
+        level: tenant
+      aggregation: latest
+      window: 24h
+      filters: []
+      topN: 5
+    requiredDataClasses:
+      - cmdb_ci
+    type: top_n_table
+    columns:
+      - name
+      - tier
+    'n': 10
+    sortDir: desc
+  - id: rca-dist
+    title: Root-cause distribution
+    query:
+      source: provider
+      dataClass: incidents
+      scope:
+        level: tenant
+      aggregation: latest
+      window: 24h
+      filters: []
+    requiredDataClasses:
+      - incidents
+    type: distribution_donut
+    dimension: root_cause
+    maxSlices: 6
+generatedBy: template

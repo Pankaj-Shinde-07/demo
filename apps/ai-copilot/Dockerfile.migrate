@@ -1,0 +1,40 @@
+# syntax=docker/dockerfile:1
+#
+# Dockerfile.migrate — one-shot DB migration image for the AI Copilot module.
+#
+# Build (from repo root):
+#   docker build -f apps/ai-copilot/Dockerfile.migrate -t canaris/ems-ai-copilot-migrate:0.1.0 .
+#
+# Run (the supported path is via compose):
+#   docker compose --profile init run --rm migrate-aicopilot
+#
+# Unlike apps/api/Dockerfile.migrate, this image does NOT bootstrap a baseline
+# schema — the EMS Core schema is assumed to already exist (the AI Copilot
+# module is additive). All it does is apply the SQL deltas in
+# apps/ai-copilot/src/migrations/ in lexical order via psql with
+# ON_ERROR_STOP=1. Migrations are idempotent (CREATE … IF NOT EXISTS), so
+# re-running the image is a no-op once the schema is in place.
+
+FROM debian:12-slim
+
+# postgresql-client is the same major-version family as the running DB
+# (PG 15) and is protocol-compatible with PG15 / pgvector/pgvector:pg15.
+# bash is used by the entrypoint script (mapfile-ish patterns, set -e).
+RUN apt-get update \
+ && apt-get install -y --no-install-recommends \
+      bash \
+      ca-certificates \
+      postgresql-client-15 \
+ && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+
+# AI Copilot SQL deltas — applied by the entrypoint via psql at /app/migrations.
+COPY apps/ai-copilot/src/migrations /app/migrations
+
+# Orchestration script.
+COPY apps/ai-copilot/scripts/migrate-entrypoint.sh /usr/local/bin/migrate-entrypoint.sh
+RUN chmod +x /usr/local/bin/migrate-entrypoint.sh
+
+# One-shot entrypoint — the script does everything and exits. No CMD.
+ENTRYPOINT ["/usr/local/bin/migrate-entrypoint.sh"]

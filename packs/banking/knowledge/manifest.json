@@ -1,0 +1,15 @@
+{
+  "_meta": {
+    "description": "SynthBank banking RAG corpus — the 6 dark-question documents (CP-P4.1b). All synthetic-labeled; ingested through the real W2 upload path.",
+    "tenant": "cfc5801f-db4e-454c-a14a-4732d9eac48a"
+  },
+  "tenant": "cfc5801f-db4e-454c-a14a-4732d9eac48a",
+  "documents": [
+    { "file": "cbs-eod-runbook.docx", "document_type": "runbook", "title": "CBS EOD Failure Restart Runbook", "answers": "CBS-i" },
+    { "file": "upi-recon-sop.md", "document_type": "sop", "title": "UPI / Sponsor-Settlement Reconciliation SOP", "answers": "CBS-j" },
+    { "file": "dr-restore-test-sop.md", "document_type": "sop", "title": "DR Restore-Test SOP", "answers": "ITADM-e" },
+    { "file": "service-restart-disk-cleanup-runbook.md", "document_type": "runbook", "title": "Hung Service Restart & Disk-Full Cleanup Runbook", "answers": "ITADM-k" },
+    { "file": "cert-renewal-runbook.md", "document_type": "runbook", "title": "SSL/TLS Certificate Renewal & Rotation Runbook", "answers": "ITADM-l" },
+    { "file": "historical-incident-rca.md", "document_type": "rca", "title": "Historical Incident RCA Archive", "answers": "NOC-f" }
+  ]
+}

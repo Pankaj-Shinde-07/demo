@@ -1,0 +1,30 @@
+alias,service_id,service_name
+cbs,SVC-CBS,Core Banking
+core banking,SVC-CBS,Core Banking
+core,SVC-CBS,Core Banking
+internet banking,SVC-IB,Internet Banking
+net banking,SVC-IB,Internet Banking
+online banking,SVC-IB,Internet Banking
+ib,SVC-IB,Internet Banking
+mobile banking,SVC-MOB,Mobile & UPI
+mobile app,SVC-MOB,Mobile & UPI
+upi,SVC-MOB,Mobile & UPI
+mobile,SVC-MOB,Mobile & UPI
+atm,SVC-ATM,ATM Switch
+atm switch,SVC-ATM,ATM Switch
+atm network,SVC-ATM,ATM Switch
+payments,SVC-PAY,Payments (NEFT/RTGS/IMPS)
+neft,SVC-PAY,Payments (NEFT/RTGS/IMPS)
+rtgs,SVC-PAY,Payments (NEFT/RTGS/IMPS)
+imps,SVC-PAY,Payments (NEFT/RTGS/IMPS)
+payment gateway,SVC-PAY,Payments (NEFT/RTGS/IMPS)
+cards,SVC-CARD,Card Management
+card management,SVC-CARD,Card Management
+card system,SVC-CARD,Card Management
+email,SVC-MAIL,Email & Collaboration
+mail,SVC-MAIL,Email & Collaboration
+collaboration,SVC-MAIL,Email & Collaboration
+crm,SVC-CRM,CRM
+customer relationship,SVC-CRM,CRM
+treasury,SVC-TRE,Treasury
+tr,SVC-TRE,Treasury

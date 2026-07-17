@@ -1,0 +1,30 @@
+{
+  "scenario": "scenario-5",
+  "name": "Interface/integration degradation (CTS↔rail)",
+  "synthetic": true,
+  "label": "SynthBank synthetic data",
+  "window": { "dayOffset": 5, "hours": 6 },
+  "correlation": {
+    "rawAlertCount": 2,
+    "incidents": 1,
+    "rootCiExternalId": "CI-0027",
+    "note": "clearing-interface latency breach — scoped to cheque clearing, NOT tier-1-wide"
+  },
+  "rootCause": { "type": "ci_failure", "ciExternalId": "CI-0027", "changeRef": null },
+  "impact": {
+    "rootCiExternalId": "CI-0027",
+    "expectedServices": ["cheque_clearing"],
+    "expectedCustomers": null,
+    "expectedBranches": 0,
+    "derivation": "traversal over §FROZEN — cheque_clearing has no branch consumers, so customers is honestly unavailable (scoped, not mass-customer)"
+  },
+  "recommendedAction": {
+    "mode": "propose",
+    "autoExecute": false,
+    "text": "Investigate CTS clearing interface; cheque-clearing SLA at risk (batch, not real-time) — human attests/executes."
+  },
+  "honestGaps": [
+    "customer count is not derivable for this interface (cheque_clearing has no customer-bearing consumers in the spine) — surfaced, not fabricated"
+  ],
+  "securityFeedGated": false
+}

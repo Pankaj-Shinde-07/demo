@@ -1,0 +1,48 @@
+<!doctype html>
+<!--
+  W7 thin demo client (DELIBERATELY un-styled — the production React UI is W11).
+  Proves the capability: type a question, watch it stream over SSE, see citations
+  + confidence + route. Open this file and point it at the running ai-copilot
+  (default http://localhost:3110). CORS is enabled on the service.
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Copilot Chat — W7 demo (un-styled)</title>
+  </head>
+  <body style="font-family: monospace; max-width: 820px; margin: 1rem auto">
+    <h3>Copilot Chat (W7 SSE demo)</h3>
+    <p>
+      base <input id="base" value="http://localhost:3110" size="28" />
+      session <input id="session" value="demo-1" size="10" />
+    </p>
+    <input id="q" placeholder="Ask… e.g. If Sponsor Bank Link A degrades, who is affected?" size="80" />
+    <button onclick="ask()">Send</button>
+    <button onclick="document.getElementById('log').innerHTML=''">Clear</button>
+    <div id="log" style="white-space: pre-wrap; border-top: 1px solid #ccc; margin-top: 1rem; padding-top: 1rem"></div>
+    <script>
+      const log = document.getElementById('log');
+      const line = (s) => { log.innerHTML += s; };
+      function ask() {
+        const base = document.getElementById('base').value;
+        const session = document.getElementById('session').value;
+        const q = document.getElementById('q').value;
+        if (!q) return;
+        line('\n\n> ' + q + '\n');
+        const url = base + '/api/v1/ai/chat/stream?q=' + encodeURIComponent(q) + '&session=' + encodeURIComponent(session);
+        const es = new EventSource(url);
+        es.onmessage = (m) => {
+          const e = JSON.parse(m.data);
+          if (e.type === 'route') line('[route: ' + e.route + ']\n');
+          else if (e.type === 'token') line(e.text);
+          else if (e.type === 'decline') line('[DECLINED] ' + e.text + (e.redirect ? '\n[redirect] ' + e.redirect : ''));
+          else if (e.type === 'citations') line('\n\n[citations] ' + e.citations.map((c) => c.kind + ':' + c.ref).join(', '));
+          else if (e.type === 'confidence') line('\n[confidence: ' + e.confidence.level + ' — ' + e.confidence.reasons.join('; ') + ']');
+          else if (e.type === 'done') { line('\n[done · grounded=' + e.grounded + ']'); es.close(); }
+        };
+        es.onerror = () => { line('\n[stream error]'); es.close(); };
+        document.getElementById('q').value = '';
+      }
+    </script>
+  </body>
+</html>

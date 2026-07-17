@@ -1,0 +1,130 @@
+schemaVersion: 1
+key: noc-real-time-infrastructure
+title: Real-Time Infrastructure Dashboard
+persona: noc
+layout:
+  grid:
+    cols: 12
+  items:
+    - widgetId: topology
+      x: 0
+      'y': 0
+      w: 4
+      h: 4
+    - widgetId: alarms
+      x: 4
+      'y': 0
+      w: 4
+      h: 4
+    - widgetId: net-heat
+      x: 8
+      'y': 0
+      w: 4
+      h: 4
+    - widgetId: top-bw
+      x: 0
+      'y': 4
+      w: 4
+      h: 4
+    - widgetId: cpu
+      x: 4
+      'y': 4
+      w: 4
+      h: 4
+    - widgetId: wan
+      x: 8
+      'y': 4
+      w: 4
+      h: 4
+widgets:
+  - id: topology
+    title: Topology
+    query:
+      source: provider
+      dataClass: topology
+      scope:
+        level: ci
+        ref: CI-0002
+      aggregation: latest
+      window: 24h
+      filters: []
+    requiredDataClasses:
+      - topology
+    type: topology_view
+    rootRef: CI-0002
+    depth: 2
+  - id: alarms
+    title: Live alarms
+    query:
+      source: provider
+      dataClass: alerts
+      scope:
+        level: tenant
+      aggregation: latest
+      window: all
+      filters: []
+    requiredDataClasses:
+      - alerts
+    type: alert_list
+    limit: 25
+  - id: net-heat
+    title: Network heat map
+    query:
+      source: provider
+      dataClass: metrics
+      scope:
+        level: fleet
+      aggregation: latest
+      window: 24h
+      filters: []
+    requiredDataClasses:
+      - metrics
+    type: heat_map
+    xDimension: ci
+    yDimension: metric
+  - id: top-bw
+    title: Top bandwidth CIs
+    query:
+      source: provider
+      dataClass: cmdb_ci
+      scope:
+        level: tenant
+      aggregation: latest
+      window: 24h
+      filters: []
+      topN: 10
+    requiredDataClasses:
+      - cmdb_ci
+    type: top_n_table
+    columns:
+      - name
+    'n': 10
+    sortDir: desc
+  - id: cpu
+    title: CPU / memory / loss
+    query:
+      source: provider
+      dataClass: metrics
+      scope:
+        level: fleet
+      aggregation: pct_up
+      window: 24h
+      filters: []
+    requiredDataClasses:
+      - metrics
+    type: kpi_tile
+    format: number
+  - id: wan
+    title: WAN availability
+    query:
+      source: provider
+      dataClass: metrics
+      scope:
+        level: fleet
+      aggregation: pct_up
+      window: 24h
+      filters: []
+    requiredDataClasses:
+      - metrics
+    type: availability_gauge
+generatedBy: template

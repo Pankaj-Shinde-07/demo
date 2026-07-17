@@ -1,0 +1,31 @@
+{
+  "scenario": "scenario-1",
+  "name": "Sponsor-link flap cascade",
+  "synthetic": true,
+  "label": "SynthBank synthetic data",
+  "window": { "dayOffset": 1, "hours": 6 },
+  "correlation": {
+    "rawAlertCount": 6,
+    "incidents": 1,
+    "rootCiExternalId": "CI-0005",
+    "note": "the storm across CI-0005's dependents compresses to one incident rooted at the sponsor link"
+  },
+  "rootCause": { "type": "ci_failure", "ciExternalId": "CI-0005", "changeRef": null },
+  "impact": {
+    "rootCiExternalId": "CI-0005",
+    "expectedServices": ["atm_card_services", "cheque_clearing", "neft_rtgs", "upi_imps"],
+    "expectedCustomers": 450000,
+    "expectedBranches": 50,
+    "derivation": "traversal over §FROZEN spine — never hard-coded"
+  },
+  "recommendedAction": {
+    "mode": "propose",
+    "autoExecute": false,
+    "text": "Investigate Sponsor Bank Link A; consider failover to Sponsor Bank Link B (DR) — human attests/executes."
+  },
+  "honestGaps": [
+    "root-cause of the flap (carrier-side vs sponsor-side) is not determinable from telemetry alone",
+    "DR-mirror (CI-0010) telemetry is absent — DR readiness cannot be asserted (the §4 DR-gap)"
+  ],
+  "securityFeedGated": false
+}

@@ -1,0 +1,2707 @@
+{
+  "summary": {
+    "dense": {
+      "overall": {
+        "recall@1": 0.3777777777777777,
+        "recall@3": 0.7138888888888888,
+        "recall@5": 0.8538888888888889,
+        "recall@10": 0.8872222222222222,
+        "mrr": 0.6438888888888888,
+        "n": 30
+      },
+      "cmdb": {
+        "recall@1": 0.3611111111111111,
+        "recall@3": 0.7013888888888888,
+        "recall@5": 0.7180555555555556,
+        "recall@10": 0.8013888888888889,
+        "mrr": 0.725,
+        "n": 12
+      },
+      "payments": {
+        "recall@1": 0.25,
+        "recall@3": 0.5,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "mrr": 0.4520833333333333,
+        "n": 8
+      },
+      "rca": {
+        "recall@1": 0.42857142857142855,
+        "recall@3": 0.8571428571428571,
+        "recall@5": 0.8571428571428571,
+        "recall@10": 0.8571428571428571,
+        "mrr": 0.6428571428571429,
+        "n": 7
+      },
+      "topology": {
+        "recall@1": 0.6666666666666666,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "mrr": 0.8333333333333334,
+        "n": 3
+      }
+    },
+    "sparse": {
+      "overall": {
+        "recall@1": 0.17777777777777776,
+        "recall@3": 0.3444444444444444,
+        "recall@5": 0.3777777777777777,
+        "recall@10": 0.3777777777777777,
+        "mrr": 0.2733333333333333,
+        "n": 30
+      },
+      "cmdb": {
+        "recall@1": 0.1111111111111111,
+        "recall@3": 0.1111111111111111,
+        "recall@5": 0.1111111111111111,
+        "recall@10": 0.1111111111111111,
+        "mrr": 0.16666666666666666,
+        "n": 12
+      },
+      "payments": {
+        "recall@1": 0.0,
+        "recall@3": 0.5,
+        "recall@5": 0.625,
+        "recall@10": 0.625,
+        "mrr": 0.23333333333333334,
+        "n": 8
+      },
+      "rca": {
+        "recall@1": 0.42857142857142855,
+        "recall@3": 0.5714285714285714,
+        "recall@5": 0.5714285714285714,
+        "recall@10": 0.5714285714285714,
+        "mrr": 0.47619047619047616,
+        "n": 7
+      },
+      "topology": {
+        "recall@1": 0.3333333333333333,
+        "recall@3": 0.3333333333333333,
+        "recall@5": 0.3333333333333333,
+        "recall@10": 0.3333333333333333,
+        "mrr": 0.3333333333333333,
+        "n": 3
+      }
+    },
+    "hybrid": {
+      "overall": {
+        "recall@1": 0.31666666666666665,
+        "recall@3": 0.6527777777777778,
+        "recall@5": 0.7872222222222223,
+        "recall@10": 0.8983333333333333,
+        "mrr": 0.5722222222222223,
+        "n": 30
+      },
+      "cmdb": {
+        "recall@1": 0.2916666666666667,
+        "recall@3": 0.6319444444444444,
+        "recall@5": 0.7180555555555556,
+        "recall@10": 0.8291666666666666,
+        "mrr": 0.6277777777777778,
+        "n": 12
+      },
+      "payments": {
+        "recall@1": 0.25,
+        "recall@3": 0.625,
+        "recall@5": 0.875,
+        "recall@10": 1.0,
+        "mrr": 0.46458333333333335,
+        "n": 8
+      },
+      "rca": {
+        "recall@1": 0.42857142857142855,
+        "recall@3": 0.7142857142857143,
+        "recall@5": 0.8571428571428571,
+        "recall@10": 0.8571428571428571,
+        "mrr": 0.6071428571428571,
+        "n": 7
+      },
+      "topology": {
+        "recall@1": 0.3333333333333333,
+        "recall@3": 0.6666666666666666,
+        "recall@5": 0.6666666666666666,
+        "recall@10": 1.0,
+        "mrr": 0.5555555555555556,
+        "n": 3
+      }
+    }
+  },
+  "per": {
+    "dense": {
+      "cmdb-upi-cis": {
+        "recall": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.2,
+          "10": 0.2
+        },
+        "rr": 0.2,
+        "top5": [
+          [
+            "synthbank-business-parameters.xlsx",
+            10
+          ],
+          [
+            "upi-imps-operational-runbook.md",
+            0
+          ],
+          [
+            "synthbank-business-parameters.xlsx",
+            15
+          ],
+          [
+            "upi-imps-operational-runbook.md",
+            4
+          ],
+          [
+            "cmdb-export.xlsx",
+            3
+          ]
+        ]
+      },
+      "cmdb-corebanking-cis": {
+        "recall": {
+          "1": 0.0,
+          "3": 0.25,
+          "5": 0.25,
+          "10": 0.75
+        },
+        "rr": 0.5,
+        "top5": [
+          [
+            "synthbank-branch-wan-topology.md",
+            2
+          ],
+          [
+            "cmdb-export.xlsx",
+            0
+          ],
+          [
+            "synthbank-cmdb-export.xlsx",
+            0
+          ],
+          [
+            "synthbank-cmdb-export.xlsx",
+            19
+          ],
+          [
+            "rca-2-eod-batch-overrun.md",
+            1
+          ]
+        ]
+      },
+      "cmdb-atm-rely": {
+        "recall": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.5
+        },
+        "rr": 0.16666666666666666,
+        "top5": [
+          [
+            "synthbank-business-parameters.xlsx",
+            11
+          ],
+          [
+            "atm-switch-cash-replenishment-sop.md",
+            0
+          ],
+          [
+            "synthbank-branch-wan-topology.md",
+            2
+          ],
+          [
+            "atm-switch-cash-replenishment-sop.md",
+            3
+          ],
+          [
+            "synthbank-cmdb-export.xlsx",
+            94
+          ]
+        ]
+      },
+      "cmdb-sponsor-dep": {
+        "recall": {
+          "1": 0.3333333333333333,
+          "3": 0.6666666666666666,
+          "5": 0.6666666666666666,
+          "10": 0.6666666666666666
+        },
+        "rr": 1.0,
+        "top5": [
+          [
+            "synthbank-cmdb-export.xlsx",
+            9
+          ],
+          [
+            "synthbank-cmdb-export.xlsx",
+            4
+          ],
+          [
+            "cmdb-export.xlsx",
+            9
+          ],
+          [
+            "rca-1-sponsor-link-flap.md",
+            1
+          ],
+          [
+            "cmdb-export.xlsx",
+            4
+          ]
+        ]
+      },
+      "cmdb-dcdr": {
+        "recall": {
+          "1": 0.5,
+          "3": 0.5,
+          "5": 0.5,
+          "10": 0.5
+        },
+        "rr": 1.0,
+        "top5": [
+          [
+            "synthbank-cmdb-export.xlsx",
+            13
+          ],
+          [
+            "synthbank-cmdb-export.xlsx",
+            27
+          ],
+          [
+            "synthbank-cmdb-export.xlsx",
+            38
+          ],
+          [
+            "cmdb-export.xlsx",
+            13
+          ],
+          [
+            "synthbank-cmdb-export.xlsx",
+            35
+          ]
+        ]
+      },
+      "cmdb-hsm-list": {
+        "recall": {
+          "1": 0.5,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "top5": [
+          [
+            "synthbank-cmdb-export.xlsx",
+            22
+          ],
+          [
+            "synthbank-cmdb-export.xlsx",
+            8
+          ],
+          [
+            "cmdb-export.xlsx",
+            8
+          ],
+          [
+            "upi-imps-operational-runbook.md",
+            3
+          ],
+          [
+            "synthbank-branch-wan-topology.md",
+            2
+          ]
+        ]
+      },
+      "cmdb-upi-switch-tier": {
+        "recall": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "top5": [
+          [
+            "cmdb-export.xlsx",
+            3
+          ],
+          [
+            "synthbank-cmdb-export.xlsx",
+            3
+          ],
+          [
+            "synthbank-cmdb-export.xlsx",
+            30
+          ],
+          [
+            "cmdb-export.xlsx",
+            5
+          ],
+          [
+            "upi-imps-operational-runbook.md",
+            4
+          ]
+        ]
+      },
+      "cmdb-channels": {
+        "recall": {
+          "1": 0.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 0.5,
+        "top5": [
+          [
+            "synthbank-branch-wan-topology.md",
+            3
+          ],
+          [
+            "synthbank-cmdb-export.xlsx",
+            24
+          ],
+          [
+            "synthbank-cmdb-export.xlsx",
+            25
+          ],
+          [
+            "synthbank-branch-wan-topology.md",
+            2
+          ],
+          [
+            "synthbank-cmdb-export.xlsx",
+            33
+          ]
+        ]
+      },
+      "cmdb-cts": {
+        "recall": {
+          "1": 0.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 0.3333333333333333,
+        "top5": [
+          [
+            "synthbank-cmdb-export.xlsx",
+            34
+          ],
+          [
+            "atm-switch-cash-replenishment-sop.md",
+            3
+          ],
+          [
+            "synthbank-cmdb-export.xlsx",
+            26
+          ],
+          [
+            "atm-switch-cash-replenishment-sop.md",
+            1
+          ],
+          [
+            "atm-switch-cash-replenishment-sop.md",
+            0
+          ]
+        ]
+      },
+      "cmdb-regrep": {
+        "recall": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "top5": [
+          [
+            "synthbank-cmdb-export.xlsx",
+            15
+          ],
+          [
+            "cmdb-export.xlsx",
+            15
+          ],
+          [
+            "synthbank-business-parameters.xlsx",
+            23
+          ],
+          [
+            "synthbank-cmdb-export.xlsx",
+            252
+          ],
+          [
+            "upi-imps-operational-runbook.md",
+            5
+          ]
+        ]
+      },
+      "cmdb-npci": {
+        "recall": {
+          "1": 0.5,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "top5": [
+          [
+            "cmdb-export.xlsx",
+            5
+          ],
+          [
+            "synthbank-cmdb-export.xlsx",
+            5
+          ],
+          [
+            "synthbank-cmdb-export.xlsx",
+            39
+          ],
+          [
+            "synthbank-cmdb-export.xlsx",
+            50
+          ],
+          [
+            "synthbank-cmdb-export.xlsx",
+            51
+          ]
+        ]
+      },
+      "cmdb-payment-gateway": {
+        "recall": {
+          "1": 0.5,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "top5": [
+          [
+            "cmdb-export.xlsx",
+            6
+          ],
+          [
+            "synthbank-cmdb-export.xlsx",
+            6
+          ],
+          [
+            "synthbank-cmdb-export.xlsx",
+            31
+          ],
+          [
+            "upi-imps-operational-runbook.md",
+            1
+          ],
+          [
+            "upi-imps-operational-runbook.md",
+            4
+          ]
+        ]
+      },
+      "pay-upi-settle": {
+        "recall": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 0.25,
+        "top5": [
+          [
+            "sponsor-bank-settlement-recon-sop.md",
+            0
+          ],
+          [
+            "sponsor-bank-settlement-recon-sop.md",
+            1
+          ],
+          [
+            "upi-recon-sop.md",
+            0
+          ],
+          [
+            "upi-imps-operational-runbook.md",
+            1
+          ],
+          [
+            "upi-imps-operational-runbook.md",
+            6
+          ]
+        ]
+      },
+      "pay-rtgs-cutoff": {
+        "recall": {
+          "1": 0.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 0.3333333333333333,
+        "top5": [
+          [
+            "neft-rtgs-operations-sop-v1-superseded.md",
+            0
+          ],
+          [
+            "neft-rtgs-operations-sop-v2-current.md",
+            2
+          ],
+          [
+            "neft-rtgs-operations-sop-v2-current.md",
+            1
+          ],
+          [
+            "neft-rtgs-operations-sop-v1-superseded.md",
+            1
+          ],
+          [
+            "neft-rtgs-operations-sop-v2-current.md",
+            0
+          ]
+        ]
+      },
+      "pay-sponsor-drop": {
+        "recall": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 0.2,
+        "top5": [
+          [
+            "rca-1-sponsor-link-flap.md",
+            1
+          ],
+          [
+            "sponsor-bank-settlement-recon-sop.md",
+            3
+          ],
+          [
+            "rca-1-sponsor-link-flap.md",
+            2
+          ],
+          [
+            "sponsor-bank-settlement-recon-sop.md",
+            1
+          ],
+          [
+            "sponsor-bank-settlement-recon-sop.md",
+            2
+          ]
+        ]
+      },
+      "pay-atm-auth": {
+        "recall": {
+          "1": 0.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 0.3333333333333333,
+        "top5": [
+          [
+            "atm-switch-cash-replenishment-sop.md",
+            0
+          ],
+          [
+            "atm-switch-cash-replenishment-sop.md",
+            2
+          ],
+          [
+            "atm-switch-cash-replenishment-sop.md",
+            1
+          ],
+          [
+            "atm-switch-cash-replenishment-sop.md",
+            3
+          ],
+          [
+            "synthbank-branch-wan-topology.md",
+            2
+          ]
+        ]
+      },
+      "pay-neft-outward": {
+        "recall": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 0.25,
+        "top5": [
+          [
+            "neft-rtgs-operations-sop-v2-current.md",
+            3
+          ],
+          [
+            "neft-rtgs-operations-sop-v1-superseded.md",
+            1
+          ],
+          [
+            "neft-rtgs-operations-sop-v2-current.md",
+            0
+          ],
+          [
+            "neft-rtgs-operations-sop-v2-current.md",
+            2
+          ],
+          [
+            "neft-rtgs-operations-sop-v2-current.md",
+            1
+          ]
+        ]
+      },
+      "pay-upi-decline": {
+        "recall": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 0.25,
+        "top5": [
+          [
+            "rca-4-upi-decline-spike.md",
+            0
+          ],
+          [
+            "upi-imps-operational-runbook.md",
+            2
+          ],
+          [
+            "rca-4-upi-decline-spike.md",
+            2
+          ],
+          [
+            "upi-imps-operational-runbook.md",
+            3
+          ],
+          [
+            "rca-4-upi-decline-spike.md",
+            1
+          ]
+        ]
+      },
+      "pay-recon-break": {
+        "recall": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "top5": [
+          [
+            "sponsor-bank-settlement-recon-sop.md",
+            2
+          ],
+          [
+            "sponsor-bank-settlement-recon-sop.md",
+            1
+          ],
+          [
+            "sponsor-bank-settlement-recon-sop.md",
+            3
+          ],
+          [
+            "sponsor-bank-settlement-recon-sop.md",
+            0
+          ],
+          [
+            "neft-rtgs-operations-sop-v2-current.md",
+            3
+          ]
+        ]
+      },
+      "pay-upi-limits": {
+        "recall": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "top5": [
+          [
+            "upi-imps-operational-runbook.md",
+            5
+          ],
+          [
+            "upi-imps-operational-runbook.md",
+            4
+          ],
+          [
+            "synthbank-business-parameters.xlsx",
+            15
+          ],
+          [
+            "upi-imps-operational-runbook.md",
+            1
+          ],
+          [
+            "cmdb-export.xlsx",
+            3
+          ]
+        ]
+      },
+      "rca-eod-change": {
+        "recall": {
+          "1": 0.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 0.5,
+        "top5": [
+          [
+            "rca-2-eod-batch-overrun.md",
+            2
+          ],
+          [
+            "rca-2-eod-batch-overrun.md",
+            0
+          ],
+          [
+            "rca-2-eod-batch-overrun.md",
+            1
+          ],
+          [
+            "rca-2-eod-batch-overrun.md",
+            3
+          ],
+          [
+            "cbs-eod-runbook.docx",
+            0
+          ]
+        ]
+      },
+      "rca-upi-spike": {
+        "recall": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "top5": [
+          [
+            "rca-4-upi-decline-spike.md",
+            0
+          ],
+          [
+            "rca-4-upi-decline-spike.md",
+            1
+          ],
+          [
+            "rca-4-upi-decline-spike.md",
+            2
+          ],
+          [
+            "upi-imps-operational-runbook.md",
+            3
+          ],
+          [
+            "rca-4-upi-decline-spike.md",
+            3
+          ]
+        ]
+      },
+      "rca-branchwan": {
+        "recall": {
+          "1": 0.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 0.5,
+        "top5": [
+          [
+            "rca-3-branch-wan-outage.md",
+            1
+          ],
+          [
+            "rca-3-branch-wan-outage.md",
+            0
+          ],
+          [
+            "rca-3-branch-wan-outage.md",
+            2
+          ],
+          [
+            "synthbank-branch-wan-topology.md",
+            4
+          ],
+          [
+            "synthbank-branch-wan-topology.md",
+            1
+          ]
+        ]
+      },
+      "rca-sponsor-flap": {
+        "recall": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "top5": [
+          [
+            "rca-1-sponsor-link-flap.md",
+            0
+          ],
+          [
+            "rca-1-sponsor-link-flap.md",
+            2
+          ],
+          [
+            "rca-1-sponsor-link-flap.md",
+            1
+          ],
+          [
+            "sponsor-bank-settlement-recon-sop.md",
+            3
+          ],
+          [
+            "sponsor-bank-settlement-recon-sop.md",
+            1
+          ]
+        ]
+      },
+      "rca-ib-timeout": {
+        "recall": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "top5": [
+          [
+            "rca-2-eod-batch-overrun.md",
+            1
+          ],
+          [
+            "rca-2-eod-batch-overrun.md",
+            3
+          ],
+          [
+            "rca-2-eod-batch-overrun.md",
+            0
+          ],
+          [
+            "rca-2-eod-batch-overrun.md",
+            2
+          ],
+          [
+            "rca-3-branch-wan-outage.md",
+            2
+          ]
+        ]
+      },
+      "rca-upi-corrective": {
+        "recall": {
+          "1": 0.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 0.5,
+        "top5": [
+          [
+            "upi-imps-operational-runbook.md",
+            3
+          ],
+          [
+            "rca-4-upi-decline-spike.md",
+            2
+          ],
+          [
+            "rca-4-upi-decline-spike.md",
+            0
+          ],
+          [
+            "rca-4-upi-decline-spike.md",
+            1
+          ],
+          [
+            "upi-imps-operational-runbook.md",
+            2
+          ]
+        ]
+      },
+      "rca-recent-change": {
+        "recall": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "rr": 0.0,
+        "top5": [
+          [
+            "rca-2-eod-batch-overrun.md",
+            2
+          ],
+          [
+            "sponsor-bank-settlement-recon-sop.md",
+            3
+          ],
+          [
+            "rca-1-sponsor-link-flap.md",
+            3
+          ],
+          [
+            "rca-2-eod-batch-overrun.md",
+            1
+          ],
+          [
+            "rca-3-branch-wan-outage.md",
+            2
+          ]
+        ]
+      },
+      "topo-hub23": {
+        "recall": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "top5": [
+          [
+            "synthbank-branch-wan-topology.md",
+            1
+          ],
+          [
+            "synthbank-cmdb-export.xlsx",
+            51
+          ],
+          [
+            "synthbank-cmdb-export.xlsx",
+            45
+          ],
+          [
+            "synthbank-cmdb-export.xlsx",
+            41
+          ],
+          [
+            "rca-3-branch-wan-outage.md",
+            1
+          ]
+        ]
+      },
+      "topo-network": {
+        "recall": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "top5": [
+          [
+            "synthbank-branch-wan-topology.md",
+            0
+          ],
+          [
+            "synthbank-branch-wan-topology.md",
+            1
+          ],
+          [
+            "synthbank-branch-wan-topology.md",
+            2
+          ],
+          [
+            "synthbank-cmdb-export.xlsx",
+            248
+          ],
+          [
+            "synthbank-cmdb-export.xlsx",
+            101
+          ]
+        ]
+      },
+      "topo-reach-dc": {
+        "recall": {
+          "1": 0.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 0.5,
+        "top5": [
+          [
+            "synthbank-branch-wan-topology.md",
+            0
+          ],
+          [
+            "synthbank-branch-wan-topology.md",
+            2
+          ],
+          [
+            "synthbank-branch-wan-topology.md",
+            1
+          ],
+          [
+            "synthbank-branch-wan-topology.md",
+            3
+          ],
+          [
+            "rca-3-branch-wan-outage.md",
+            1
+          ]
+        ]
+      }
+    },
+    "sparse": {
+      "cmdb-upi-cis": {
+        "recall": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "rr": 0.0,
+        "top5": []
+      },
+      "cmdb-corebanking-cis": {
+        "recall": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "rr": 0.0,
+        "top5": []
+      },
+      "cmdb-atm-rely": {
+        "recall": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "rr": 0.0,
+        "top5": []
+      },
+      "cmdb-sponsor-dep": {
+        "recall": {
+          "1": 0.3333333333333333,
+          "3": 0.3333333333333333,
+          "5": 0.3333333333333333,
+          "10": 0.3333333333333333
+        },
+        "rr": 1.0,
+        "top5": [
+          [
+            "sponsor-bank-settlement-recon-sop.md",
+            2
+          ],
+          [
+            "upi-imps-operational-runbook.md",
+            1
+          ],
+          [
+            "sponsor-bank-settlement-recon-sop.md",
+            1
+          ],
+          [
+            "rca-1-sponsor-link-flap.md",
+            1
+          ],
+          [
+            "atm-switch-cash-replenishment-sop.md",
+            3
+          ]
+        ]
+      },
+      "cmdb-dcdr": {
+        "recall": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "rr": 0.0,
+        "top5": []
+      },
+      "cmdb-hsm-list": {
+        "recall": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "rr": 0.0,
+        "top5": []
+      },
+      "cmdb-upi-switch-tier": {
+        "recall": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "top5": [
+          [
+            "synthbank-cmdb-export.xlsx",
+            3
+          ],
+          [
+            "cmdb-export.xlsx",
+            3
+          ],
+          [
+            "synthbank-cmdb-export.xlsx",
+            30
+          ],
+          [
+            "synthbank-branch-wan-topology.md",
+            2
+          ]
+        ]
+      },
+      "cmdb-channels": {
+        "recall": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "rr": 0.0,
+        "top5": []
+      },
+      "cmdb-cts": {
+        "recall": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "rr": 0.0,
+        "top5": []
+      },
+      "cmdb-regrep": {
+        "recall": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "rr": 0.0,
+        "top5": []
+      },
+      "cmdb-npci": {
+        "recall": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "rr": 0.0,
+        "top5": []
+      },
+      "cmdb-payment-gateway": {
+        "recall": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "rr": 0.0,
+        "top5": [
+          [
+            "synthbank-branch-wan-topology.md",
+            2
+          ]
+        ]
+      },
+      "pay-upi-settle": {
+        "recall": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "rr": 0.0,
+        "top5": [
+          [
+            "sponsor-bank-settlement-recon-sop.md",
+            0
+          ],
+          [
+            "rca-1-sponsor-link-flap.md",
+            0
+          ],
+          [
+            "upi-imps-operational-runbook.md",
+            5
+          ],
+          [
+            "sponsor-bank-settlement-recon-sop.md",
+            1
+          ],
+          [
+            "rca-1-sponsor-link-flap.md",
+            1
+          ]
+        ]
+      },
+      "pay-rtgs-cutoff": {
+        "recall": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 0.2,
+        "top5": [
+          [
+            "neft-rtgs-operations-sop-v1-superseded.md",
+            0
+          ],
+          [
+            "neft-rtgs-operations-sop-v2-current.md",
+            2
+          ],
+          [
+            "neft-rtgs-operations-sop-v2-current.md",
+            0
+          ],
+          [
+            "neft-rtgs-operations-sop-v1-superseded.md",
+            1
+          ],
+          [
+            "neft-rtgs-operations-sop-v2-current.md",
+            1
+          ]
+        ]
+      },
+      "pay-sponsor-drop": {
+        "recall": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "rr": 0.0,
+        "top5": [
+          [
+            "sponsor-bank-settlement-recon-sop.md",
+            1
+          ],
+          [
+            "rca-1-sponsor-link-flap.md",
+            1
+          ],
+          [
+            "sponsor-bank-settlement-recon-sop.md",
+            3
+          ]
+        ]
+      },
+      "pay-atm-auth": {
+        "recall": {
+          "1": 0.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 0.3333333333333333,
+        "top5": [
+          [
+            "atm-switch-cash-replenishment-sop.md",
+            0
+          ],
+          [
+            "atm-switch-cash-replenishment-sop.md",
+            2
+          ],
+          [
+            "atm-switch-cash-replenishment-sop.md",
+            1
+          ],
+          [
+            "atm-switch-cash-replenishment-sop.md",
+            3
+          ]
+        ]
+      },
+      "pay-neft-outward": {
+        "recall": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "rr": 0.0,
+        "top5": [
+          [
+            "neft-rtgs-operations-sop-v1-superseded.md",
+            1
+          ]
+        ]
+      },
+      "pay-upi-decline": {
+        "recall": {
+          "1": 0.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 0.3333333333333333,
+        "top5": [
+          [
+            "rca-4-upi-decline-spike.md",
+            0
+          ],
+          [
+            "rca-4-upi-decline-spike.md",
+            1
+          ],
+          [
+            "upi-imps-operational-runbook.md",
+            3
+          ],
+          [
+            "rca-1-sponsor-link-flap.md",
+            0
+          ],
+          [
+            "upi-imps-operational-runbook.md",
+            5
+          ]
+        ]
+      },
+      "pay-recon-break": {
+        "recall": {
+          "1": 0.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 0.5,
+        "top5": [
+          [
+            "sponsor-bank-settlement-recon-sop.md",
+            3
+          ],
+          [
+            "sponsor-bank-settlement-recon-sop.md",
+            2
+          ],
+          [
+            "sponsor-bank-settlement-recon-sop.md",
+            1
+          ],
+          [
+            "neft-rtgs-operations-sop-v2-current.md",
+            3
+          ],
+          [
+            "sponsor-bank-settlement-recon-sop.md",
+            4
+          ]
+        ]
+      },
+      "pay-upi-limits": {
+        "recall": {
+          "1": 0.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 0.5,
+        "top5": [
+          [
+            "upi-imps-operational-runbook.md",
+            4
+          ],
+          [
+            "upi-imps-operational-runbook.md",
+            5
+          ]
+        ]
+      },
+      "rca-eod-change": {
+        "recall": {
+          "1": 0.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 0.3333333333333333,
+        "top5": [
+          [
+            "rca-2-eod-batch-overrun.md",
+            1
+          ],
+          [
+            "rca-2-eod-batch-overrun.md",
+            2
+          ],
+          [
+            "rca-2-eod-batch-overrun.md",
+            0
+          ],
+          [
+            "rca-2-eod-batch-overrun.md",
+            3
+          ]
+        ]
+      },
+      "rca-upi-spike": {
+        "recall": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "top5": [
+          [
+            "rca-4-upi-decline-spike.md",
+            1
+          ],
+          [
+            "rca-4-upi-decline-spike.md",
+            0
+          ],
+          [
+            "upi-imps-operational-runbook.md",
+            3
+          ]
+        ]
+      },
+      "rca-branchwan": {
+        "recall": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "rr": 0.0,
+        "top5": []
+      },
+      "rca-sponsor-flap": {
+        "recall": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "top5": [
+          [
+            "rca-1-sponsor-link-flap.md",
+            0
+          ],
+          [
+            "upi-imps-operational-runbook.md",
+            3
+          ],
+          [
+            "rca-1-sponsor-link-flap.md",
+            1
+          ],
+          [
+            "sponsor-bank-settlement-recon-sop.md",
+            1
+          ],
+          [
+            "rca-1-sponsor-link-flap.md",
+            2
+          ]
+        ]
+      },
+      "rca-ib-timeout": {
+        "recall": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "top5": [
+          [
+            "rca-2-eod-batch-overrun.md",
+            1
+          ],
+          [
+            "rca-2-eod-batch-overrun.md",
+            2
+          ],
+          [
+            "rca-2-eod-batch-overrun.md",
+            0
+          ]
+        ]
+      },
+      "rca-upi-corrective": {
+        "recall": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "rr": 0.0,
+        "top5": [
+          [
+            "rca-4-upi-decline-spike.md",
+            1
+          ],
+          [
+            "rca-1-sponsor-link-flap.md",
+            1
+          ]
+        ]
+      },
+      "rca-recent-change": {
+        "recall": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "rr": 0.0,
+        "top5": []
+      },
+      "topo-hub23": {
+        "recall": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "rr": 0.0,
+        "top5": [
+          [
+            "synthbank-branch-wan-topology.md",
+            0
+          ]
+        ]
+      },
+      "topo-network": {
+        "recall": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "top5": [
+          [
+            "synthbank-branch-wan-topology.md",
+            0
+          ],
+          [
+            "synthbank-branch-wan-topology.md",
+            2
+          ],
+          [
+            "synthbank-branch-wan-topology.md",
+            3
+          ]
+        ]
+      },
+      "topo-reach-dc": {
+        "recall": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "rr": 0.0,
+        "top5": [
+          [
+            "synthbank-branch-wan-topology.md",
+            0
+          ],
+          [
+            "synthbank-branch-wan-topology.md",
+            3
+          ],
+          [
+            "rca-3-branch-wan-outage.md",
+            0
+          ],
+          [
+            "rca-3-branch-wan-outage.md",
+            2
+          ],
+          [
+            "synthbank-branch-wan-topology.md",
+            1
+          ]
+        ]
+      }
+    },
+    "hybrid": {
+      "cmdb-upi-cis": {
+        "recall": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.2,
+          "10": 0.2
+        },
+        "rr": 0.2,
+        "top5": [
+          [
+            "synthbank-business-parameters.xlsx",
+            10
+          ],
+          [
+            "upi-imps-operational-runbook.md",
+            0
+          ],
+          [
+            "synthbank-business-parameters.xlsx",
+            15
+          ],
+          [
+            "upi-imps-operational-runbook.md",
+            4
+          ],
+          [
+            "cmdb-export.xlsx",
+            3
+          ]
+        ]
+      },
+      "cmdb-corebanking-cis": {
+        "recall": {
+          "1": 0.0,
+          "3": 0.25,
+          "5": 0.25,
+          "10": 0.75
+        },
+        "rr": 0.5,
+        "top5": [
+          [
+            "synthbank-branch-wan-topology.md",
+            2
+          ],
+          [
+            "cmdb-export.xlsx",
+            0
+          ],
+          [
+            "synthbank-cmdb-export.xlsx",
+            0
+          ],
+          [
+            "synthbank-cmdb-export.xlsx",
+            19
+          ],
+          [
+            "rca-2-eod-batch-overrun.md",
+            1
+          ]
+        ]
+      },
+      "cmdb-atm-rely": {
+        "recall": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.5
+        },
+        "rr": 0.16666666666666666,
+        "top5": [
+          [
+            "synthbank-business-parameters.xlsx",
+            11
+          ],
+          [
+            "atm-switch-cash-replenishment-sop.md",
+            0
+          ],
+          [
+            "synthbank-branch-wan-topology.md",
+            2
+          ],
+          [
+            "atm-switch-cash-replenishment-sop.md",
+            3
+          ],
+          [
+            "synthbank-cmdb-export.xlsx",
+            94
+          ]
+        ]
+      },
+      "cmdb-sponsor-dep": {
+        "recall": {
+          "1": 0.0,
+          "3": 0.3333333333333333,
+          "5": 0.6666666666666666,
+          "10": 1.0
+        },
+        "rr": 0.3333333333333333,
+        "top5": [
+          [
+            "rca-1-sponsor-link-flap.md",
+            1
+          ],
+          [
+            "sponsor-bank-settlement-recon-sop.md",
+            1
+          ],
+          [
+            "sponsor-bank-settlement-recon-sop.md",
+            2
+          ],
+          [
+            "upi-imps-operational-runbook.md",
+            1
+          ],
+          [
+            "synthbank-cmdb-export.xlsx",
+            9
+          ]
+        ]
+      },
+      "cmdb-dcdr": {
+        "recall": {
+          "1": 0.5,
+          "3": 0.5,
+          "5": 0.5,
+          "10": 0.5
+        },
+        "rr": 1.0,
+        "top5": [
+          [
+            "synthbank-cmdb-export.xlsx",
+            13
+          ],
+          [
+            "synthbank-cmdb-export.xlsx",
+            27
+          ],
+          [
+            "synthbank-cmdb-export.xlsx",
+            38
+          ],
+          [
+            "cmdb-export.xlsx",
+            13
+          ],
+          [
+            "synthbank-cmdb-export.xlsx",
+            35
+          ]
+        ]
+      },
+      "cmdb-hsm-list": {
+        "recall": {
+          "1": 0.5,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "top5": [
+          [
+            "synthbank-cmdb-export.xlsx",
+            22
+          ],
+          [
+            "synthbank-cmdb-export.xlsx",
+            8
+          ],
+          [
+            "cmdb-export.xlsx",
+            8
+          ],
+          [
+            "upi-imps-operational-runbook.md",
+            3
+          ],
+          [
+            "synthbank-branch-wan-topology.md",
+            2
+          ]
+        ]
+      },
+      "cmdb-upi-switch-tier": {
+        "recall": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "top5": [
+          [
+            "cmdb-export.xlsx",
+            3
+          ],
+          [
+            "synthbank-cmdb-export.xlsx",
+            3
+          ],
+          [
+            "synthbank-cmdb-export.xlsx",
+            30
+          ],
+          [
+            "cmdb-export.xlsx",
+            5
+          ],
+          [
+            "upi-imps-operational-runbook.md",
+            4
+          ]
+        ]
+      },
+      "cmdb-channels": {
+        "recall": {
+          "1": 0.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 0.5,
+        "top5": [
+          [
+            "synthbank-branch-wan-topology.md",
+            3
+          ],
+          [
+            "synthbank-cmdb-export.xlsx",
+            24
+          ],
+          [
+            "synthbank-cmdb-export.xlsx",
+            25
+          ],
+          [
+            "synthbank-branch-wan-topology.md",
+            2
+          ],
+          [
+            "synthbank-cmdb-export.xlsx",
+            33
+          ]
+        ]
+      },
+      "cmdb-cts": {
+        "recall": {
+          "1": 0.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 0.3333333333333333,
+        "top5": [
+          [
+            "synthbank-cmdb-export.xlsx",
+            34
+          ],
+          [
+            "atm-switch-cash-replenishment-sop.md",
+            3
+          ],
+          [
+            "synthbank-cmdb-export.xlsx",
+            26
+          ],
+          [
+            "atm-switch-cash-replenishment-sop.md",
+            1
+          ],
+          [
+            "atm-switch-cash-replenishment-sop.md",
+            0
+          ]
+        ]
+      },
+      "cmdb-regrep": {
+        "recall": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "top5": [
+          [
+            "synthbank-cmdb-export.xlsx",
+            15
+          ],
+          [
+            "cmdb-export.xlsx",
+            15
+          ],
+          [
+            "synthbank-business-parameters.xlsx",
+            23
+          ],
+          [
+            "synthbank-cmdb-export.xlsx",
+            252
+          ],
+          [
+            "upi-imps-operational-runbook.md",
+            5
+          ]
+        ]
+      },
+      "cmdb-npci": {
+        "recall": {
+          "1": 0.5,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "top5": [
+          [
+            "cmdb-export.xlsx",
+            5
+          ],
+          [
+            "synthbank-cmdb-export.xlsx",
+            5
+          ],
+          [
+            "synthbank-cmdb-export.xlsx",
+            39
+          ],
+          [
+            "synthbank-cmdb-export.xlsx",
+            50
+          ],
+          [
+            "synthbank-cmdb-export.xlsx",
+            51
+          ]
+        ]
+      },
+      "cmdb-payment-gateway": {
+        "recall": {
+          "1": 0.0,
+          "3": 0.5,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 0.5,
+        "top5": [
+          [
+            "synthbank-branch-wan-topology.md",
+            2
+          ],
+          [
+            "cmdb-export.xlsx",
+            6
+          ],
+          [
+            "synthbank-cmdb-export.xlsx",
+            6
+          ],
+          [
+            "synthbank-cmdb-export.xlsx",
+            31
+          ],
+          [
+            "upi-imps-operational-runbook.md",
+            1
+          ]
+        ]
+      },
+      "pay-upi-settle": {
+        "recall": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 1.0
+        },
+        "rr": 0.1,
+        "top5": [
+          [
+            "sponsor-bank-settlement-recon-sop.md",
+            0
+          ],
+          [
+            "sponsor-bank-settlement-recon-sop.md",
+            1
+          ],
+          [
+            "upi-imps-operational-runbook.md",
+            6
+          ],
+          [
+            "sponsor-bank-settlement-recon-sop.md",
+            2
+          ],
+          [
+            "upi-imps-operational-runbook.md",
+            4
+          ]
+        ]
+      },
+      "pay-rtgs-cutoff": {
+        "recall": {
+          "1": 0.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 0.3333333333333333,
+        "top5": [
+          [
+            "neft-rtgs-operations-sop-v1-superseded.md",
+            0
+          ],
+          [
+            "neft-rtgs-operations-sop-v2-current.md",
+            2
+          ],
+          [
+            "neft-rtgs-operations-sop-v2-current.md",
+            1
+          ],
+          [
+            "neft-rtgs-operations-sop-v1-superseded.md",
+            1
+          ],
+          [
+            "neft-rtgs-operations-sop-v2-current.md",
+            0
+          ]
+        ]
+      },
+      "pay-sponsor-drop": {
+        "recall": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 0.2,
+        "top5": [
+          [
+            "rca-1-sponsor-link-flap.md",
+            1
+          ],
+          [
+            "sponsor-bank-settlement-recon-sop.md",
+            3
+          ],
+          [
+            "sponsor-bank-settlement-recon-sop.md",
+            1
+          ],
+          [
+            "rca-1-sponsor-link-flap.md",
+            2
+          ],
+          [
+            "sponsor-bank-settlement-recon-sop.md",
+            2
+          ]
+        ]
+      },
+      "pay-atm-auth": {
+        "recall": {
+          "1": 0.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 0.3333333333333333,
+        "top5": [
+          [
+            "atm-switch-cash-replenishment-sop.md",
+            0
+          ],
+          [
+            "atm-switch-cash-replenishment-sop.md",
+            2
+          ],
+          [
+            "atm-switch-cash-replenishment-sop.md",
+            1
+          ],
+          [
+            "atm-switch-cash-replenishment-sop.md",
+            3
+          ],
+          [
+            "synthbank-branch-wan-topology.md",
+            2
+          ]
+        ]
+      },
+      "pay-neft-outward": {
+        "recall": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 0.25,
+        "top5": [
+          [
+            "neft-rtgs-operations-sop-v1-superseded.md",
+            1
+          ],
+          [
+            "neft-rtgs-operations-sop-v2-current.md",
+            3
+          ],
+          [
+            "neft-rtgs-operations-sop-v2-current.md",
+            0
+          ],
+          [
+            "neft-rtgs-operations-sop-v2-current.md",
+            2
+          ],
+          [
+            "neft-rtgs-operations-sop-v2-current.md",
+            1
+          ]
+        ]
+      },
+      "pay-upi-decline": {
+        "recall": {
+          "1": 0.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 0.5,
+        "top5": [
+          [
+            "rca-4-upi-decline-spike.md",
+            0
+          ],
+          [
+            "upi-imps-operational-runbook.md",
+            3
+          ],
+          [
+            "rca-4-upi-decline-spike.md",
+            1
+          ],
+          [
+            "rca-1-sponsor-link-flap.md",
+            0
+          ],
+          [
+            "upi-imps-operational-runbook.md",
+            5
+          ]
+        ]
+      },
+      "pay-recon-break": {
+        "recall": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "top5": [
+          [
+            "sponsor-bank-settlement-recon-sop.md",
+            2
+          ],
+          [
+            "sponsor-bank-settlement-recon-sop.md",
+            1
+          ],
+          [
+            "sponsor-bank-settlement-recon-sop.md",
+            3
+          ],
+          [
+            "neft-rtgs-operations-sop-v2-current.md",
+            3
+          ],
+          [
+            "sponsor-bank-settlement-recon-sop.md",
+            4
+          ]
+        ]
+      },
+      "pay-upi-limits": {
+        "recall": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "top5": [
+          [
+            "upi-imps-operational-runbook.md",
+            5
+          ],
+          [
+            "upi-imps-operational-runbook.md",
+            4
+          ],
+          [
+            "synthbank-business-parameters.xlsx",
+            15
+          ],
+          [
+            "upi-imps-operational-runbook.md",
+            1
+          ],
+          [
+            "cmdb-export.xlsx",
+            3
+          ]
+        ]
+      },
+      "rca-eod-change": {
+        "recall": {
+          "1": 0.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 0.5,
+        "top5": [
+          [
+            "rca-2-eod-batch-overrun.md",
+            2
+          ],
+          [
+            "rca-2-eod-batch-overrun.md",
+            0
+          ],
+          [
+            "rca-2-eod-batch-overrun.md",
+            1
+          ],
+          [
+            "rca-2-eod-batch-overrun.md",
+            3
+          ],
+          [
+            "cbs-eod-runbook.docx",
+            0
+          ]
+        ]
+      },
+      "rca-upi-spike": {
+        "recall": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "top5": [
+          [
+            "rca-4-upi-decline-spike.md",
+            0
+          ],
+          [
+            "rca-4-upi-decline-spike.md",
+            1
+          ],
+          [
+            "upi-imps-operational-runbook.md",
+            3
+          ],
+          [
+            "rca-4-upi-decline-spike.md",
+            2
+          ],
+          [
+            "rca-4-upi-decline-spike.md",
+            3
+          ]
+        ]
+      },
+      "rca-branchwan": {
+        "recall": {
+          "1": 0.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 0.5,
+        "top5": [
+          [
+            "rca-3-branch-wan-outage.md",
+            1
+          ],
+          [
+            "rca-3-branch-wan-outage.md",
+            0
+          ],
+          [
+            "rca-3-branch-wan-outage.md",
+            2
+          ],
+          [
+            "synthbank-branch-wan-topology.md",
+            4
+          ],
+          [
+            "synthbank-branch-wan-topology.md",
+            1
+          ]
+        ]
+      },
+      "rca-sponsor-flap": {
+        "recall": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "top5": [
+          [
+            "rca-1-sponsor-link-flap.md",
+            0
+          ],
+          [
+            "rca-1-sponsor-link-flap.md",
+            2
+          ],
+          [
+            "rca-1-sponsor-link-flap.md",
+            1
+          ],
+          [
+            "sponsor-bank-settlement-recon-sop.md",
+            1
+          ],
+          [
+            "upi-imps-operational-runbook.md",
+            3
+          ]
+        ]
+      },
+      "rca-ib-timeout": {
+        "recall": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "top5": [
+          [
+            "rca-2-eod-batch-overrun.md",
+            1
+          ],
+          [
+            "rca-2-eod-batch-overrun.md",
+            0
+          ],
+          [
+            "rca-2-eod-batch-overrun.md",
+            2
+          ],
+          [
+            "rca-2-eod-batch-overrun.md",
+            3
+          ],
+          [
+            "rca-3-branch-wan-outage.md",
+            2
+          ]
+        ]
+      },
+      "rca-upi-corrective": {
+        "recall": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 0.25,
+        "top5": [
+          [
+            "rca-4-upi-decline-spike.md",
+            1
+          ],
+          [
+            "upi-imps-operational-runbook.md",
+            3
+          ],
+          [
+            "rca-1-sponsor-link-flap.md",
+            1
+          ],
+          [
+            "rca-4-upi-decline-spike.md",
+            2
+          ],
+          [
+            "rca-4-upi-decline-spike.md",
+            0
+          ]
+        ]
+      },
+      "rca-recent-change": {
+        "recall": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "rr": 0.0,
+        "top5": [
+          [
+            "rca-2-eod-batch-overrun.md",
+            2
+          ],
+          [
+            "sponsor-bank-settlement-recon-sop.md",
+            3
+          ],
+          [
+            "rca-1-sponsor-link-flap.md",
+            3
+          ],
+          [
+            "rca-2-eod-batch-overrun.md",
+            1
+          ],
+          [
+            "rca-3-branch-wan-outage.md",
+            2
+          ]
+        ]
+      },
+      "topo-hub23": {
+        "recall": {
+          "1": 0.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 0.5,
+        "top5": [
+          [
+            "synthbank-branch-wan-topology.md",
+            0
+          ],
+          [
+            "synthbank-branch-wan-topology.md",
+            1
+          ],
+          [
+            "synthbank-cmdb-export.xlsx",
+            51
+          ],
+          [
+            "synthbank-cmdb-export.xlsx",
+            45
+          ],
+          [
+            "synthbank-cmdb-export.xlsx",
+            41
+          ]
+        ]
+      },
+      "topo-network": {
+        "recall": {
+          "1": 1.0,
+          "3": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "rr": 1.0,
+        "top5": [
+          [
+            "synthbank-branch-wan-topology.md",
+            0
+          ],
+          [
+            "synthbank-branch-wan-topology.md",
+            2
+          ],
+          [
+            "synthbank-branch-wan-topology.md",
+            3
+          ],
+          [
+            "synthbank-branch-wan-topology.md",
+            1
+          ],
+          [
+            "synthbank-cmdb-export.xlsx",
+            248
+          ]
+        ]
+      },
+      "topo-reach-dc": {
+        "recall": {
+          "1": 0.0,
+          "3": 0.0,
+          "5": 0.0,
+          "10": 1.0
+        },
+        "rr": 0.16666666666666666,
+        "top5": [
+          [
+            "synthbank-branch-wan-topology.md",
+            0
+          ],
+          [
+            "synthbank-branch-wan-topology.md",
+            1
+          ],
+          [
+            "synthbank-branch-wan-topology.md",
+            3
+          ],
+          [
+            "rca-3-branch-wan-outage.md",
+            2
+          ],
+          [
+            "rca-3-branch-wan-outage.md",
+            0
+          ]
+        ]
+      }
+    }
+  },
+  "thesis": {
+    "overall": {
+      "recall@10_ok": true,
+      "mrr_ok": false
+    },
+    "cmdb": {
+      "recall@10_ok": true,
+      "mrr_ok": false
+    }
+  },
+  "honesty": [
+    {
+      "id": "hon-atm-dr",
+      "passed": true,
+      "evidence_present": [
+        false,
+        true,
+        true
+      ],
+      "top3": [
+        [
+          "synthbank-branch-wan-topology.md",
+          3
+        ],
+        [
+          "atm-switch-cash-replenishment-sop.md",
+          0
+        ],
+        [
+          "synthbank-cmdb-export.xlsx",
+          7
+        ]
+      ]
+    },
+    {
+      "id": "hon-recon-upstream",
+      "passed": true,
+      "evidence_present": [
+        true,
+        true
+      ],
+      "top3": [
+        [
+          "synthbank-cmdb-export.xlsx",
+          251
+        ],
+        [
+          "sponsor-bank-settlement-recon-sop.md",
+          1
+        ],
+        [
+          "atm-switch-cash-replenishment-sop.md",
+          3
+        ]
+      ]
+    },
+    {
+      "id": "hon-tier1-switch",
+      "passed": true,
+      "evidence_present": [
+        true
+      ],
+      "top3": [
+        [
+          "synthbank-branch-wan-topology.md",
+          1
+        ],
+        [
+          "synthbank-branch-wan-topology.md",
+          3
+        ],
+        [
+          "rca-1-sponsor-link-flap.md",
+          0
+        ]
+      ]
+    },
+    {
+      "id": "hon-nonexistent-svc",
+      "passed": true,
+      "evidence_present": [],
+      "top3": [
+        [
+          "cmdb-export.xlsx",
+          5
+        ],
+        [
+          "synthbank-cmdb-export.xlsx",
+          39
+        ],
+        [
+          "neft-rtgs-operations-sop-v2-current.md",
+          0
+        ]
+      ]
+    },
+    {
+      "id": "hon-nonexistent-rca",
+      "passed": true,
+      "evidence_present": [],
+      "top3": [
+        [
+          "rca-1-sponsor-link-flap.md",
+          0
+        ],
+        [
+          "rca-3-branch-wan-outage.md",
+          2
+        ],
+        [
+          "rca-3-branch-wan-outage.md",
+          1
+        ]
+      ]
+    }
+  ],
+  "gate": {
+    "metric": "recall@10",
+    "threshold": 0.85,
+    "value": 0.8983333333333333,
+    "pass": true
+  },
+  "prefix_regression": {
+    "ok": true,
+    "detail": "cos(query_embed(text), stored_passage)=0.9832 (<0.99 required; ~1.0 => prefix dropped)"
+  }
+}

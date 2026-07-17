@@ -1,0 +1,144 @@
+schemaVersion: 1
+key: ceo-bank-digital-operations-scorecard
+title: Bank Digital Operations Scorecard
+persona: ceo
+layout:
+  grid:
+    cols: 12
+  items:
+    - widgetId: narrative
+      x: 0
+      'y': 0
+      w: 12
+      h: 3
+    - widgetId: traffic
+      x: 0
+      'y': 4
+      w: 4
+      h: 4
+    - widgetId: cbs-avail
+      x: 4
+      'y': 4
+      w: 4
+      h: 4
+    - widgetId: sla
+      x: 8
+      'y': 4
+      w: 4
+      h: 4
+    - widgetId: crit-inc
+      x: 0
+      'y': 8
+      w: 4
+      h: 4
+    - widgetId: svc-health
+      x: 4
+      'y': 8
+      w: 4
+      h: 4
+    - widgetId: risk
+      x: 8
+      'y': 8
+      w: 4
+      h: 4
+widgets:
+  - id: narrative
+    title: Executive summary
+    query:
+      source: provider
+      dataClass: incidents
+      scope:
+        level: tenant
+      aggregation: latest
+      window: 24h
+      filters: []
+    requiredDataClasses: []
+    type: ai_narrative
+    scope: tenant
+    maxWords: 220
+  - id: traffic
+    title: Service status
+    query:
+      source: provider
+      dataClass: asset_status
+      scope:
+        level: tenant
+      aggregation: latest
+      window: 24h
+      filters: []
+    requiredDataClasses:
+      - asset_status
+    type: status_traffic_light
+  - id: cbs-avail
+    title: CBS availability
+    query:
+      source: provider
+      dataClass: metrics
+      scope:
+        level: fleet
+      aggregation: pct_up
+      window: 24h
+      filters: []
+    requiredDataClasses:
+      - metrics
+    type: availability_gauge
+  - id: sla
+    title: SLA compliance
+    query:
+      source: provider
+      dataClass: metrics
+      scope:
+        level: fleet
+      aggregation: pct_up
+      window: 24h
+      filters: []
+    requiredDataClasses:
+      - metrics
+    type: kpi_tile
+    unit: percent
+    format: percent
+  - id: crit-inc
+    title: Critical incidents
+    query:
+      source: provider
+      dataClass: incidents
+      scope:
+        level: tenant
+      aggregation: latest
+      window: 24h
+      filters: []
+    requiredDataClasses:
+      - incidents
+    type: kpi_tile
+    format: number
+  - id: svc-health
+    title: Service health map
+    query:
+      source: provider
+      dataClass: business_services
+      scope:
+        level: tenant
+      aggregation: latest
+      window: 24h
+      filters: []
+    requiredDataClasses:
+      - business_services
+      - asset_status
+    type: service_health_map
+    groupBy: tier
+  - id: risk
+    title: Risk heat map
+    query:
+      source: provider
+      dataClass: vulnerabilities
+      scope:
+        level: tenant
+      aggregation: latest
+      window: 24h
+      filters: []
+    requiredDataClasses:
+      - vulnerabilities
+    type: heat_map
+    xDimension: impact
+    yDimension: likelihood
+generatedBy: template

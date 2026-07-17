@@ -1,0 +1,95 @@
+schemaVersion: 1
+key: branch-operations
+title: Branch Operations Dashboard
+persona: branch_head
+layout:
+  grid:
+    cols: 12
+  items:
+    - widgetId: geo
+      x: 0
+      'y': 0
+      w: 4
+      h: 4
+    - widgetId: conn
+      x: 4
+      'y': 0
+      w: 4
+      h: 4
+    - widgetId: top-branch
+      x: 8
+      'y': 0
+      w: 4
+      h: 4
+    - widgetId: link
+      x: 0
+      'y': 4
+      w: 4
+      h: 4
+widgets:
+  - id: geo
+    title: Regional status map
+    query:
+      source: provider
+      dataClass: asset_status
+      scope:
+        level: tenant
+      aggregation: latest
+      window: 24h
+      filters:
+        - field: ci_type
+          op: eq
+          value: branch_router
+    requiredDataClasses:
+      - asset_status
+    type: geo_map
+  - id: conn
+    title: Connectivity / CBS / ATM
+    query:
+      source: provider
+      dataClass: metrics
+      scope:
+        level: fleet
+      aggregation: pct_up
+      window: 24h
+      filters: []
+    requiredDataClasses:
+      - metrics
+    type: kpi_tile
+    format: number
+  - id: top-branch
+    title: Top problem branches
+    query:
+      source: provider
+      dataClass: cmdb_ci
+      scope:
+        level: tenant
+      aggregation: latest
+      window: 24h
+      filters:
+        - field: ci_type
+          op: eq
+          value: branch_router
+      topN: 5
+    requiredDataClasses:
+      - cmdb_ci
+    type: top_n_table
+    columns:
+      - name
+    'n': 10
+    sortDir: desc
+  - id: link
+    title: Link status
+    query:
+      source: provider
+      dataClass: asset_status
+      scope:
+        level: ci
+        ref: CI-0002
+      aggregation: latest
+      window: 24h
+      filters: []
+    requiredDataClasses:
+      - asset_status
+    type: status_traffic_light
+generatedBy: template

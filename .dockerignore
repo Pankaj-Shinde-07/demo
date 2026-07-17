@@ -1,0 +1,80 @@
+# Dependencies
+node_modules
+*/node_modules
+**/node_modules
+
+# Build outputs
+dist
+*/dist
+**/dist
+.next
+*.tsbuildinfo
+
+# Test & Coverage
+coverage
+*/coverage
+**/coverage
+.nyc_output
+
+# Git
+.git
+.gitignore
+.gitattributes
+
+# IDE
+.idea
+.vscode
+*.swp
+*.swo
+*~
+
+# Environment files (secrets)
+.env
+.env.*
+!.env.example
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Docker
+Dockerfile*
+docker-compose*
+.docker
+
+# Documentation
+docs
+*.md
+!README.md
+
+# Packaging artifacts (multi-GB tarballs/zips — never part of a build context)
+packaging
+
+# Temporary files
+tmp
+temp
+.tmp
+.temp
+
+# Development
+.claude
+*.backup
+*.bak
+
+# Test files
+**/*.spec.ts
+**/*.test.ts
+**/__tests__
+test
+tests
+
+# Model cache + uploads are runtime bind-mounts, never build context (CP-P4)
+.hf-cache
+.ki-uploads
